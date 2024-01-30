@@ -1,0 +1,52 @@
+[gd_scene load_steps=6 format=3 uid="uid://icdwkwcsav5a"]
+
+[ext_resource type="Script" path="res://Scripts/PizzaTime.cs" id="1_f14fc"]
+[ext_resource type="Texture2D" uid="uid://bl81i0t8xxjti" path="res://Pizza Timer/Pizza Time/pizzatime02.png" id="2_pkqjq"]
+[ext_resource type="Texture2D" uid="uid://ru67kw66q00l" path="res://Pizza Timer/Pizza Time/pizzatime01.png" id="3_04lkf"]
+
+[sub_resource type="Animation" id="Animation_57bde"]
+resource_name = "pizza"
+length = 0.20001
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("3_04lkf"), ExtResource("2_pkqjq")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_awn47"]
+_data = {
+"pizza": SubResource("Animation_57bde")
+}
+
+[node name="Pizza Time!" type="Window" node_paths=PackedStringArray("animator")]
+disable_3d = true
+transparent_bg = true
+handle_input_locally = false
+snap_2d_transforms_to_pixel = true
+snap_2d_vertices_to_pixel = true
+title = "It's Pizza TIme!"
+size = Vector2i(250, 200)
+transient = true
+unresizable = true
+borderless = true
+always_on_top = true
+transparent = true
+script = ExtResource("1_f14fc")
+animator = NodePath("Sprite2D/AnimationPlayer")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(125, 100)
+texture = ExtResource("2_pkqjq")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite2D"]
+libraries = {
+"": SubResource("AnimationLibrary_awn47")
+}

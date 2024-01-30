@@ -1,0 +1,19 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pizza Timer", "Pizza Timer.csproj", "{053826E7-51E1-4AB5-8D38-F9AD72FDCABD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+	Debug|Any CPU = Debug|Any CPU
+	ExportDebug|Any CPU = ExportDebug|Any CPU
+	ExportRelease|Any CPU = ExportRelease|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{053826E7-51E1-4AB5-8D38-F9AD72FDCABD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{053826E7-51E1-4AB5-8D38-F9AD72FDCABD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{053826E7-51E1-4AB5-8D38-F9AD72FDCABD}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
+		{053826E7-51E1-4AB5-8D38-F9AD72FDCABD}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
+		{053826E7-51E1-4AB5-8D38-F9AD72FDCABD}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
+		{053826E7-51E1-4AB5-8D38-F9AD72FDCABD}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,130 @@
+[gd_scene load_steps=23 format=3 uid="uid://buulwsia4xrtj"]
+
+[ext_resource type="Texture2D" uid="uid://vli64lnlmlug" path="res://Pizza Timer/Pizza Face/Chase/spr_pizzaface_9.png" id="1_gyrte"]
+[ext_resource type="Script" path="res://Scripts/PizzaFace.cs" id="1_mt7an"]
+[ext_resource type="Texture2D" uid="uid://4dq7xf6p1bpo" path="res://Pizza Timer/Pizza Face/Chase/spr_pizzaface_0.png" id="1_xotfg"]
+[ext_resource type="AudioStream" uid="uid://chs6xtfoa4f8v" path="res://SFX/PizzafaceMoving.ogg" id="2_ojr5p"]
+[ext_resource type="Texture2D" uid="uid://b4buvuvgjwk52" path="res://Pizza Timer/Pizza Face/Chase/spr_pizzaface_1.png" id="3_ml0rw"]
+[ext_resource type="Texture2D" uid="uid://y0se53vluuhr" path="res://Pizza Timer/Pizza Face/Chase/spr_pizzaface_2.png" id="4_s6s8b"]
+[ext_resource type="Texture2D" uid="uid://dl5hq1r43r6yg" path="res://Pizza Timer/Pizza Face/Chase/spr_pizzaface_3.png" id="5_r2s1m"]
+[ext_resource type="Texture2D" uid="uid://kdfg5gqhaym7" path="res://Pizza Timer/Pizza Face/Chase/spr_pizzaface_4.png" id="6_0bhoi"]
+[ext_resource type="Texture2D" uid="uid://oofhuvmvqpyw" path="res://Pizza Timer/Pizza Face/Chase/spr_pizzaface_5.png" id="7_phgq1"]
+[ext_resource type="Texture2D" uid="uid://t0vo2dafm6sr" path="res://Pizza Timer/Pizza Face/Chase/spr_pizzaface_6.png" id="8_0uxjo"]
+[ext_resource type="Texture2D" uid="uid://db2pw78a0cg3i" path="res://Pizza Timer/Pizza Face/Chase/spr_pizzaface_7.png" id="9_gg422"]
+[ext_resource type="Texture2D" uid="uid://bt8x5oibvpaag" path="res://Pizza Timer/Pizza Face/Chase/spr_pizzaface_8.png" id="10_ldwc4"]
+[ext_resource type="Texture2D" uid="uid://d2oi34y2h51l0" path="res://Pizza Timer/Pizza Face/Chase/spr_pizzaface_10.png" id="11_bjle8"]
+[ext_resource type="Texture2D" uid="uid://b038bdyr3c82j" path="res://Pizza Timer/Pizza Face/Chase/spr_pizzaface_11.png" id="12_n3iod"]
+[ext_resource type="Texture2D" uid="uid://b3gum1kcjfjk" path="res://Pizza Timer/Pizza Face/Chase/spr_pizzaface_12.png" id="13_5ywhu"]
+[ext_resource type="Texture2D" uid="uid://d16ly3w2ocopk" path="res://Pizza Timer/Pizza Face/Chase/spr_pizzaface_13.png" id="14_i0l15"]
+[ext_resource type="Texture2D" uid="uid://br7kakjartx3d" path="res://Pizza Timer/Pizza Face/Chase/spr_pizzaface_14.png" id="15_b1uiv"]
+[ext_resource type="Texture2D" uid="uid://c5lj54pttuwks" path="res://Pizza Timer/Pizza Face/Chase/spr_pizzaface_15.png" id="16_lnjir"]
+
+[sub_resource type="Animation" id="Animation_hfxk1"]
+resource_name = "Chase"
+length = 0.750005
+loop_mode = 1
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("1_xotfg"), ExtResource("3_ml0rw"), ExtResource("4_s6s8b"), ExtResource("5_r2s1m"), ExtResource("6_0bhoi"), ExtResource("7_phgq1"), ExtResource("8_0uxjo"), ExtResource("9_gg422"), ExtResource("10_ldwc4"), ExtResource("1_gyrte"), ExtResource("11_bjle8"), ExtResource("12_n3iod"), ExtResource("13_5ywhu"), ExtResource("14_i0l15"), ExtResource("15_b1uiv"), ExtResource("16_lnjir")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_uox5m"]
+_data = {
+"Chase": SubResource("Animation_hfxk1")
+}
+
+[sub_resource type="Animation" id="Animation_nh4lg"]
+resource_name = "Spawn"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 0, 0, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("..:canMove")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(2),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_kt4jr"]
+_data = {
+"Spawn": SubResource("Animation_nh4lg")
+}
+
+[node name="PizzaFace" type="Window" node_paths=PackedStringArray("animator", "spawn")]
+disable_3d = true
+transparent_bg = true
+handle_input_locally = false
+snap_2d_transforms_to_pixel = true
+snap_2d_vertices_to_pixel = true
+title = "ShowTime"
+size = Vector2i(150, 150)
+transient = true
+unresizable = true
+borderless = true
+always_on_top = true
+transparent = true
+content_scale_mode = 2
+script = ExtResource("1_mt7an")
+animator = NodePath("Pizza Face/Chase")
+spawn = NodePath("Pizza Face/PizzaAppear")
+canMove = true
+
+[node name="Pizza Face" type="Sprite2D" parent="."]
+position = Vector2(75, 75)
+texture = ExtResource("12_n3iod")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Pizza Face"]
+position = Vector2(-75, -75)
+stream = ExtResource("2_ojr5p")
+autoplay = true
+
+[node name="Chase" type="AnimationPlayer" parent="Pizza Face"]
+libraries = {
+"": SubResource("AnimationLibrary_uox5m")
+}
+
+[node name="PizzaAppear" type="AnimationPlayer" parent="Pizza Face"]
+libraries = {
+"": SubResource("AnimationLibrary_kt4jr")
+}
+
+[node name="Control" type="Control" parent="Pizza Face"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -85.0
+offset_top = -75.0
+offset_right = -35.0
+offset_bottom = -25.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[connection signal="mouse_entered" from="Pizza Face/Control" to="." method="_on_control_mouse_entered"]

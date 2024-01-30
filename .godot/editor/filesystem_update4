@@ -1,0 +1,21 @@
+res://Timer/Timer Scene.tscn
+res://Timer/ProgressBar.gdshader
+res://MainMenu.cs
+res://Timer/MainMenu.tscn
+res://Timer/PizzaFace.tscn
+res://Pizza Timer/Pizza Time/pizza_time!.tscn
+res://Pizza Timer/Pizza Face/PizzaFace.cs
+res://Pizza Timer/TimerScript.cs
+res://PizzaTime.cs
+res://Timer/BGM.cs
+res://Scenes/pizza_time!.tscn
+res://Scenes/Timer Scene.tscn
+res://Scenes/ProgressBar.gdshader
+res://Scenes/MainMenu.tscn
+res://Scenes/PizzaFace.tscn
+res://Scripts/BGM.cs
+res://Scripts/MainMenu.cs
+res://Scripts/PizzaFace.cs
+res://Scripts/PizzaTime.cs
+res://Scripts/TimerScript.cs
+res://export_presets.cfg

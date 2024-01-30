@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c06qbklg4w5m4"
+path="res://.godot/imported/09 Meatophobia.mp3-36f4accd213194c72f03b2cc199898c5.mp3str"
+
+[deps]
+
+source_file="res://BGM/09 Meatophobia.mp3"
+dest_files=["res://.godot/imported/09 Meatophobia.mp3-36f4accd213194c72f03b2cc199898c5.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4
