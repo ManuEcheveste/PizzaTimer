@@ -34,7 +34,6 @@ snap_2d_transforms_to_pixel = true
 snap_2d_vertices_to_pixel = true
 title = "It's Pizza TIme!"
 size = Vector2i(250, 200)
-transient = true
 unresizable = true
 borderless = true
 always_on_top = true

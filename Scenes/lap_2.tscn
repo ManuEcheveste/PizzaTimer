@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://cf40qs8rordbj"]
+
+[ext_resource type="Texture2D" uid="uid://bb6n66grghskw" path="res://Pizza Timer/Laps/Spr_lap2_0.png" id="1_ae2nn"]
+
+[node name="Lap 2" type="Window"]
+title = "Lap 2!"
+size = Vector2i(250, 160)
+unresizable = true
+borderless = true
+always_on_top = true
+transparent = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(120, 80)
+texture = ExtResource("1_ae2nn")

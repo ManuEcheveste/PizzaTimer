@@ -18,7 +18,9 @@ public partial class PizzaTime : Window
 	public override void _Process(double delta)
 	{
 		float deltaTime = (float)delta;
-		Position = new Vector2I(Position.X, Position.Y - 6);
+		int speed = 300;
+		var time = Position.Y - speed * deltaTime;
+		Position = new Vector2I(Position.X, (int)time);
 		if(timer > 0)
 		{
 			timer -= deltaTime;

@@ -1,0 +1,105 @@
+[gd_scene load_steps=13 format=3 uid="uid://buc8ax8a55r1j"]
+
+[ext_resource type="Script" path="res://Scripts/Ranks.cs" id="1_rb2jh"]
+[ext_resource type="AudioStream" uid="uid://hc2c0b00d4xu" path="res://BGM/Your Fat Cursor Slows You Down.mp3" id="1_w8033"]
+[ext_resource type="Texture2D" uid="uid://c7v1ja4u4e5ma" path="res://Pizza Timer/Times Up/FatCursor01.png" id="3_fjqdu"]
+[ext_resource type="Texture2D" uid="uid://bl8lguae557g4" path="res://Pizza Timer/Times Up/FatCursor02.png" id="4_ssd0f"]
+[ext_resource type="Texture2D" uid="uid://d283euw8hq7ca" path="res://Pizza Timer/Times Up/FatCursor03.png" id="5_cepqj"]
+[ext_resource type="Texture2D" uid="uid://cvxj4r47rv67t" path="res://Pizza Timer/Times Up/FatCursor04.png" id="6_ttuor"]
+[ext_resource type="Texture2D" uid="uid://banbrjhgtvti5" path="res://Pizza Timer/Times Up/FatCursor05.png" id="7_mxbhr"]
+[ext_resource type="Texture2D" uid="uid://4g44dx1ncqsp" path="res://Pizza Timer/Times Up/FatCursor06.png" id="8_djlfs"]
+[ext_resource type="Texture2D" uid="uid://dyo7h3o2busix" path="res://Pizza Timer/Times Up/FatCursor07.png" id="9_iw0l1"]
+[ext_resource type="Texture2D" uid="uid://boei3w41uxuwn" path="res://Pizza Timer/Times Up/FatCursor08.png" id="10_3gkxc"]
+
+[sub_resource type="Animation" id="Animation_425eu"]
+resource_name = "FatCursor"
+length = 6.00001
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../../AudioStreamPlayer2D:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 3, 3.05, 3.1, 3.15, 3.2, 3.25, 3.3, 3.35),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("3_fjqdu"), ExtResource("3_fjqdu"), ExtResource("4_ssd0f"), ExtResource("5_cepqj"), ExtResource("6_ttuor"), ExtResource("7_mxbhr"), ExtResource("8_djlfs"), ExtResource("9_iw0l1"), ExtResource("10_3gkxc")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 2.4, 3, 3.05, 3.1, 3.15, 3.2, 3.25, 3.3, 3.35),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(480, -60), Vector2(480, -60), Vector2(480, 270), Vector2(480, 280), Vector2(480, 288), Vector2(480, 270), Vector2(480, 276), Vector2(484, 273), Vector2(485, 273), Vector2(478, 273)]
+}
+tracks/3/type = "method"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../..")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(5.95),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"Exit"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_evhe0"]
+_data = {
+"FatCursor": SubResource("Animation_425eu")
+}
+
+[node name="YourFatCursorSlowsYouDown" type="Control" node_paths=PackedStringArray("animator")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_rb2jh")
+animator = NodePath("Window/Sprite2D/AnimationPlayer")
+isGameOver = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("1_w8033")
+bus = &"Music"
+
+[node name="Window" type="Window" parent="."]
+title = "Your Fat Cursor Slows You Down"
+initial_position = 4
+size = Vector2i(960, 540)
+unresizable = true
+borderless = true
+always_on_top = true
+transparent = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Window"]
+position = Vector2(480, -60)
+texture = ExtResource("3_fjqdu")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Window/Sprite2D"]
+libraries = {
+"": SubResource("AnimationLibrary_evhe0")
+}

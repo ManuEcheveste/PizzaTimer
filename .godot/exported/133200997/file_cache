@@ -1,5 +1,8 @@
-res://Scenes/MainMenu.tscn::699183b00644b85228016761d11b3535::1706584243::res://.godot/exported/133200997/export-5d46f2c25b5b7595677274e5845c73b8-MainMenu.scn
-res://Scenes/PizzaFace.tscn::5a7c882f6a04dd575ad726005aeb7d8a::1706584258::res://.godot/exported/133200997/export-3fa04ffe28e8ccbcce7072267d5c3b57-PizzaFace.scn
-res://Scenes/pizza_time!.tscn::38b1763380188d4341a7dd896a9150b3::1706584243::res://.godot/exported/133200997/export-5d2886e976d2565b1954f049dda6ba3a-pizza_time!.scn
-res://Scenes/Timer Scene.tscn::8f65b3f96ccada788ef9e5dc8c781f3f::1706584242::res://.godot/exported/133200997/export-2a8b4525f8b9f3c4c894e2a1f33778d1-Timer Scene.scn
+res://Scenes/MainMenu.tscn::2db1818eb02d398b65d8c43b7a399ea0::1707121183::res://.godot/exported/133200997/export-5d46f2c25b5b7595677274e5845c73b8-MainMenu.scn
+res://Scenes/PizzaFace.tscn::2fbf5b25b39988e2d029ab320c7dac4f::1707121184::res://.godot/exported/133200997/export-3fa04ffe28e8ccbcce7072267d5c3b57-PizzaFace.scn
+res://Scenes/pizza_time!.tscn::cda8025f122f7b5e9d24c59de9540702::1707121184::res://.godot/exported/133200997/export-5d2886e976d2565b1954f049dda6ba3a-pizza_time!.scn
+res://Scenes/Timer Scene.tscn::fccf85bd3910ae6101d8b9e167e095c4::1707121183::res://.godot/exported/133200997/export-2a8b4525f8b9f3c4c894e2a1f33778d1-Timer Scene.scn
 res://default_bus_layout.tres::d5bbfc6b2927c428713c06324df3356e::1706520689::res://.godot/exported/133200997/export-19246414aa9fb561ced4b8dce477acec-default_bus_layout.res
+res://Scenes/Death.tscn::2dc7291611640286e925a323b516370f::1707121184::res://.godot/exported/133200997/export-44d49f801bf462e4d21e96d1c3053a19-Death.scn
+res://Scenes/Ranks.tscn::d2d2e2825c0c255e976d411da13d5160::1707121184::res://.godot/exported/133200997/export-d15c52b86787f298c61b00a565d5bf10-Ranks.scn
+res://Scenes/lap_2.tscn::ba21b4cbb31ea0ab7d0bce43dbff16fb::1707121184::res://.godot/exported/133200997/export-007c54834a82edd5be25bd61acc30709-lap_2.scn

@@ -1,5 +1,6 @@
 using Godot;
 using System;
+using System.Collections;
 using System.IO;
 using System.Linq.Expressions;
 
@@ -9,11 +10,16 @@ public partial class PizzaFace : Window
 	[Export] AnimationPlayer spawn;
 	[Export] public bool canMove;
 	[Export] public bool crash;
-
+	private bool haywire;
+	private bool shutdown;
+	[Export] public PackedScene gameOver;
+	private float speed;
 	private Vector2 targetPosition = Vector2.Zero;
+
+
+
 	public override void _Ready()
 	{
-		animator.Play("Chase");
 		int x = DisplayServer.MouseGetPosition().X - 75;
 		int y = DisplayServer.MouseGetPosition().Y - 75;
 		Position = new Vector2I(x, y);
@@ -22,18 +28,24 @@ public partial class PizzaFace : Window
 		Error err = config.Load("user://config.cfg");
 		if (err != Error.Ok)
 		{
-			config.SetValue("Timer", "seconds", 30);
-			config.SetValue("Timer", "minutes", 1);
-			config.SetValue("Timer", "hours", 0);
-			config.SetValue("Settings", "music", true);
-			config.SetValue("Settings", "crash", true);
-			config.Save("user://config.cfg");
-			GD.Print("No file found");
+
 		}
 		else
 		{
 			crash = (bool)config.GetValue("Settings", "crash");
+			shutdown = (bool)config.GetValue("Settings", "shutdown");
+			haywire = (bool)config.GetValue("PizzaFace", "slowpizzaface");
 			GD.Print("Crash value: " + crash);
+		}
+		if (haywire == false)
+		{
+			animator.Play("Chase");
+			speed = 250;
+		}
+		else
+		{
+			animator.Play("HayWire");
+			speed = 150;			
 		}
 		spawn.Play("Spawn");
 	}
@@ -48,13 +60,19 @@ public partial class PizzaFace : Window
 				GD.Print("Crash value: " + crash);
 				GD.Print("Crash");
 				var output = new Godot.Collections.Array();
-				OS.Execute("cmd.exe", new string[] { "/C", "shutdown /h" }, output);
+				if (shutdown == true)
+					OS.Execute("cmd.exe", new string[] { "/C", "shutdown /p" }, output);
+				else
+					OS.Execute("cmd.exe", new string[] { "/C", "shutdown /h" }, output);
 				GetTree().Quit();
 			}
 			else
 			{
 				GD.Print("Crash value: " + crash);
 				GD.Print("No crash");
+				/*Ranks scene = (Ranks)gameOver.Instantiate();
+				GetTree().Root.GetChild(0).AddChild(scene);
+				QueueFree();*/
 				GetTree().Quit();
 			}
 		}
@@ -63,21 +81,22 @@ public partial class PizzaFace : Window
 
 	public override void _Process(double delta)
 	{
+		float deltaTime = (float)delta;
 		if (canMove == true)
 		{
 			int x = DisplayServer.MouseGetPosition().X - 75;
 			int y = DisplayServer.MouseGetPosition().Y - 75;
-			//GD.Print(DisplayServer.MouseGetPosition());
+
 			if (Position.X < x)
 			{
 				if (x - Position.X > 5)
 				{
-					int pizzaX = Position.X + 4;
-					Position = new Vector2I(pizzaX, Position.Y);
+					var pizzaX = Position.X + speed * deltaTime;
+					Position = new Vector2I((int)pizzaX, Position.Y);
 				}
 				else
 				{
-					int pizzaX = Position.X + 1;
+					var pizzaX = Position.X + 1;
 					Position = new Vector2I(pizzaX, Position.Y);
 				}
 			}
@@ -85,12 +104,12 @@ public partial class PizzaFace : Window
 			{
 				if (Position.X - x > 5)
 				{
-					int pizzaX = Position.X - 4;
-					Position = new Vector2I(pizzaX, Position.Y);
+					var pizzaX = Position.X - speed * deltaTime;
+					Position = new Vector2I((int)pizzaX, Position.Y);
 				}
 				else
 				{
-					int pizzaX = Position.X - 1;
+					var pizzaX = Position.X - 1;
 					Position = new Vector2I(pizzaX, Position.Y);
 				}
 			}
@@ -99,12 +118,12 @@ public partial class PizzaFace : Window
 			{
 				if (y - Position.Y > 5)
 				{
-					int pizzaY = Position.Y + 4;
-					Position = new Vector2I(Position.X, pizzaY);
+					var pizzaY = Position.Y + speed * deltaTime;
+					Position = new Vector2I(Position.X, (int)pizzaY);
 				}
 				else
 				{
-					int pizzaY = Position.Y + 1;
+					var pizzaY = Position.Y + 1;
 					Position = new Vector2I(Position.X, pizzaY);
 				}
 			}
@@ -112,12 +131,12 @@ public partial class PizzaFace : Window
 			{
 				if (Position.Y - y > 5)
 				{
-					int pizzaY = Position.Y - 4;
-					Position = new Vector2I(Position.X, pizzaY);
+					var pizzaY = Position.Y - speed * deltaTime;
+					Position = new Vector2I(Position.X, (int)pizzaY);
 				}
 				else
 				{
-					int pizzaY = Position.Y - 1;
+					var pizzaY = Position.Y - 1;
 					Position = new Vector2I(Position.X, pizzaY);
 				}
 			}

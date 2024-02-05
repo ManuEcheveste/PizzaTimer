@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://hc2c0b00d4xu"
+path="res://.godot/imported/Your Fat Cursor Slows You Down.mp3-2d5882f180ebc3f27bc3d8d3b6db0cb0.mp3str"
+
+[deps]
+
+source_file="res://BGM/Your Fat Cursor Slows You Down.mp3"
+dest_files=["res://.godot/imported/Your Fat Cursor Slows You Down.mp3-2d5882f180ebc3f27bc3d8d3b6db0cb0.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

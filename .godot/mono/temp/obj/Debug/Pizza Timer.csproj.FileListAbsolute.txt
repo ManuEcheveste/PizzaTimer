@@ -15,3 +15,21 @@ C:\Users\ManuEcheveste\Documents\Pizza Timer\.godot\mono\temp\obj\Debug\refint\P
 C:\Users\ManuEcheveste\Documents\Pizza Timer\.godot\mono\temp\obj\Debug\Pizza Timer.pdb
 C:\Users\ManuEcheveste\Documents\Pizza Timer\.godot\mono\temp\obj\Debug\Pizza Timer.genruntimeconfig.cache
 C:\Users\ManuEcheveste\Documents\Pizza Timer\.godot\mono\temp\obj\Debug\ref\Pizza Timer.dll
+C:\Users\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\Debug\Pizza Timer.deps.json
+C:\Users\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\Debug\Pizza Timer.runtimeconfig.json
+C:\Users\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\Debug\Pizza Timer.dll
+C:\Users\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\Debug\Pizza Timer.pdb
+C:\Users\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\Debug\GodotSharp.dll
+C:\Users\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\Debug\GodotSharpEditor.dll
+C:\Users\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\obj\Debug\Pizza Timer.csproj.AssemblyReference.cache
+C:\Users\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\obj\Debug\Pizza Timer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\obj\Debug\Pizza Timer.AssemblyInfoInputs.cache
+C:\Users\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\obj\Debug\Pizza Timer.AssemblyInfo.cs
+C:\Users\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\obj\Debug\Pizza Timer.csproj.CoreCompileInputs.cache
+C:\Users\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\obj\Debug\Pizza Timer.sourcelink.json
+C:\Users\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\obj\Debug\Pizza Timer.csproj.CopyComplete
+C:\Users\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\obj\Debug\Pizza Timer.dll
+C:\Users\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\obj\Debug\refint\Pizza Timer.dll
+C:\Users\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\obj\Debug\Pizza Timer.pdb
+C:\Users\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\obj\Debug\Pizza Timer.genruntimeconfig.cache
+C:\Users\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\obj\Debug\ref\Pizza Timer.dll

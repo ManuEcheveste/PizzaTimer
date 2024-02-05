@@ -85,11 +85,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ManuEcheveste\\Documents\\Pizza Timer\\Pizza Timer.csproj",
+      "projectUniqueName": "C:\\Users\\ManuEcheveste\\Documents\\GitHub\\PizzaTimer\\Pizza Timer.csproj",
       "projectName": "Pizza Timer",
-      "projectPath": "C:\\Users\\ManuEcheveste\\Documents\\Pizza Timer\\Pizza Timer.csproj",
+      "projectPath": "C:\\Users\\ManuEcheveste\\Documents\\GitHub\\PizzaTimer\\Pizza Timer.csproj",
       "packagesPath": "C:\\Users\\ManuEcheveste\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ManuEcheveste\\Documents\\Pizza Timer\\.godot\\mono\\temp\\obj\\",
+      "outputPath": "C:\\Users\\ManuEcheveste\\Documents\\GitHub\\PizzaTimer\\.godot\\mono\\temp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
