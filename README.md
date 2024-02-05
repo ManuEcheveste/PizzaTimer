@@ -16,4 +16,5 @@ If you get in the case that you find a bug, you can report it on the Issues repo
 
 Enjoy the adrenaline of doing simple tasks under pressure!
 
-Technical info Pizza Timer was made in Godot v4.1.3 Stable mono with .NET Support. Most of the code (if not all) is written in C#.
+Technical info
+Pizza Timer was made in Godot v4.1.3 Stable mono with .NET Support. Most of the code (if not all) is written in C#.
