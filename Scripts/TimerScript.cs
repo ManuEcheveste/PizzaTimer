@@ -6,6 +6,7 @@ public partial class TimerScript : Control
 {
 	public float timer;
 	public float maxTime;
+	public float hours;
 	public float minutes;
 	private string minutesText;
 	public float seconds;
@@ -20,16 +21,20 @@ public partial class TimerScript : Control
 	private bool canSpawnPizzaFace;
 	private bool lap3SpawnPizzaFace;
 	[Export] public AnimationPlayer pizzaFaceTimer;
+	[Export] public Timer timerLogic;
 	[Export] public TextureProgressBar fill;
 	[Export] public HSlider john;
 	[Export] public AnimationPlayer johnFace;
 	[Export] public AudioStreamPlayer2D panicBGM;
 	[Export] public AudioStreamPlayer2D bgm;
 	[Export] public AudioStreamPlayer2D pizzaFaceSFX;
+	[Export] public AudioStreamPlayer2D sfx;
+	[Export] public AudioStream lapsSFX;
 	[Export] public BGM bgmLogic;
 	[Export] public RichTextLabel timeText;
 	[Export] public PackedScene pizzaFace;
 	[Export] public PackedScene ranks;
+	[Export] public PackedScene lapsFlag;
 	public PizzaFace pizzaFaceObj;
 
 	// Called when the node enters the scene tree for the first time.
@@ -64,7 +69,7 @@ public partial class TimerScript : Control
 			minutes = (float)Mathf.CeilToInt(minutes);
 			seconds = timer % 60;
 			seconds = (float)Mathf.CeilToInt(seconds);
-			;
+			timerLogic.SetTime(timer);
 
 			if (minutes > 0)
 			{
@@ -151,6 +156,11 @@ public partial class TimerScript : Control
 					lap1 = false;
 					bgmLogic.NextLap();
 					GD.Print("Lap 2!");
+					LapsLogic lapFlag = (LapsLogic)lapsFlag.Instantiate();
+					GetTree().Root.GetChild(0).AddChild(lapFlag);
+					lapFlag.SpawnFlag(2);
+					sfx.Stream = lapsSFX;
+					sfx.Play();
 				}
 			}
 			if (Input.IsActionPressed("lap3"))
@@ -169,7 +179,12 @@ public partial class TimerScript : Control
 					}
 					lap++;
 					bgmLogic.NextLap();
-					GD.Print("Lap 3!");
+					GD.Print("Lap 3!");					
+					LapsLogic lapFlag = (LapsLogic)lapsFlag.Instantiate();
+					GetTree().Root.GetChild(0).AddChild(lapFlag);
+					lapFlag.SpawnFlag(3);
+					sfx.Stream = lapsSFX;
+					sfx.Play();
 					if (lap3SpawnPizzaFace == true)
 					{
 						timer = 0.1f;

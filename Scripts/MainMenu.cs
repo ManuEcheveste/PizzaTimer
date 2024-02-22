@@ -16,6 +16,10 @@ public partial class MainMenu : Button
 	[Export] public CheckButton lap3SpawnButton;
 	[Export] public CheckButton slowPizzaFaceButton;
 	[Export] public CheckButton spawnPizzaFaceButton;
+	[Export] public CheckButton useCustomCMDButton;
+	[Export] public Button setCMDButton;
+	[Export] public TextEdit customCommand;
+	[Export] public Window commandWindow;
 	[Export] public CheckButton welcomeButton;
 	[Export] public Window crashWindow;
 	[Export] public Window welcomeWindow;
@@ -42,7 +46,7 @@ public partial class MainMenu : Button
 	public bool crash;
 	private bool shutdown;
 	private bool lap3Spawn;
-	private bool slowPizzaFace;
+	private bool slowPizzaFace = false;
 	private bool spawnPizzaFace;
 	private bool customCMD;
 	private string command;
@@ -57,6 +61,15 @@ public partial class MainMenu : Button
 		johnPillar.Play("JohnIdle");
 		var config = new ConfigFile();
 		Error err = config.Load("user://config.cfg");
+		if (isWindows == false)
+		{
+			crashButton.Disabled = true;
+			crashButton.ButtonPressed = false;
+			crashOptionsButton.Disabled = true;
+			useCustomCMDButton.Disabled = true;
+			customCMD = false;
+			setCMDButton.Disabled = true;
+		}
 		if (err != Error.Ok)
 		{
 			GD.Print("Could not find any config file. Creating one");
@@ -79,48 +92,7 @@ public partial class MainMenu : Button
 			}
 			if (reportedVersion >= version)
 			{
-				showWelcome = (bool)config.GetValue("Pizza Timer", "welcome");
-				welcomeButton.ButtonPressed = showWelcome;
-				secondsText.Value = (float)config.GetValue("Timer", "seconds");
-				minutesText.Value = (float)config.GetValue("Timer", "minutes");
-				hoursText.Value = (float)config.GetValue("Timer", "hours");
-				music = (bool)config.GetValue("Settings", "music");
-				crash = (bool)config.GetValue("Settings", "crash");
-				shutdown = (bool)config.GetValue("Settings", "shutdown");
-				lap3Spawn = (bool)config.GetValue("PizzaFace", "lap3spawn");
-				slowPizzaFace = (bool)config.GetValue("PizzaFace", "slowpizzaface");
-				spawnPizzaFace = (bool)config.GetValue("PizzaFace", "spawn");
-				musicButton.ButtonPressed = music;
-				crashButton.ButtonPressed = crash;
-				shutdownButton.ButtonPressed = shutdown;
-				lap3SpawnButton.ButtonPressed = lap3Spawn;
-				slowPizzaFaceButton.ButtonPressed = slowPizzaFace;
-				spawnPizzaFaceButton.ButtonPressed = spawnPizzaFace;
-				GD.Print("Crash value: " + crash);
-				if (showWelcome == true)
-				{
-					welcomeWindow.Visible = showWelcome;
-				}
-				if (music == false)
-				{
-					var sfx_index = AudioServer.GetBusIndex("Music");
-					AudioServer.SetBusVolumeDb(sfx_index, -80);
-				}
-				if (spawnPizzaFace == false)
-				{
-					crashButton.Disabled = true;
-					crashOptionsButton.Disabled = true;
-					lap3SpawnButton.Disabled = true;
-				}
-				else
-				{
-					lap3SpawnButton.Disabled = false;
-					if (isWindows == true)
-					{
-						crashButton.Disabled = false;
-						crashOptionsButton.Disabled = false;
-					}
-				}
+				ReadData();
 			}
 			else
 			{
@@ -128,6 +100,25 @@ public partial class MainMenu : Button
 				{
 					GD.Print("Running a newer version of the program. Resetting values");
 					CreateFile();
+				}
+			}
+		}
+	}
+
+	public override void _Process(double delta)
+	{
+		if (Input.IsActionJustPressed("mute"))
+		{
+			if (timer.pizzaTime == true)
+			{
+				var sfx_index = AudioServer.GetBusIndex("Music");
+				if (AudioServer.GetBusVolumeDb(sfx_index) == 0)
+				{
+					AudioServer.SetBusVolumeDb(sfx_index, -80);
+				}
+				else
+				{
+					AudioServer.SetBusVolumeDb(sfx_index, 0);
 				}
 			}
 		}
@@ -145,20 +136,89 @@ public partial class MainMenu : Button
 		config.SetValue("Timer", "hours", 0);
 		config.SetValue("Settings", "music", true);
 		if (isWindows == true)
+		{			
 			config.SetValue("Settings", "crash", true);
+			config.SetValue("Settings", "shutdown", false);
+		}
 		else
 		{
 			config.SetValue("Settings", "crash", false);
+			config.SetValue("Settings", "shutdown", false);
 			crashButton.Disabled = true;
 			crashButton.ButtonPressed = false;
+			crashOptionsButton.Disabled = true;
+			useCustomCMDButton.Disabled = true;
+			customCMD = false;
+			setCMDButton.Disabled = true;
 		}
-		config.SetValue("Settings", "shutdown", false);
 		config.SetValue("PizzaFace", "lap3spawn", true);
 		config.SetValue("PizzaFace", "slowpizzaface", false);
 		config.SetValue("PizzaFace", "spawn", true);
-		config.SetValue("Settings", "useCustom", false);
-		config.SetValue("Settings", "customCommand", "");
+		config.SetValue("Settings", "usecustom", false);
+		config.SetValue("Settings", "customcommand", "");
 		config.Save("user://config.cfg");
+		ReadData();
+	}
+
+	private void ReadData()
+	{
+		var config = new ConfigFile();
+		Error err = config.Load("user://config.cfg");
+		showWelcome = (bool)config.GetValue("Pizza Timer", "welcome");
+		welcomeButton.ButtonPressed = showWelcome;
+		secondsText.Value = (float)config.GetValue("Timer", "seconds");
+		minutesText.Value = (float)config.GetValue("Timer", "minutes");
+		hoursText.Value = (float)config.GetValue("Timer", "hours");
+		music = (bool)config.GetValue("Settings", "music");
+		crash = (bool)config.GetValue("Settings", "crash");
+		shutdown = (bool)config.GetValue("Settings", "shutdown");
+		lap3Spawn = (bool)config.GetValue("PizzaFace", "lap3spawn");
+		GD.Print("Before reading PizzaFaceSlow Value " + slowPizzaFace);
+		slowPizzaFace = (bool)config.GetValue("PizzaFace", "slowpizzaface");
+		GD.Print("After reading PizzaFaceSlow Value " + slowPizzaFace);
+		slowPizzaFaceButton.ButtonPressed = slowPizzaFace;
+		GD.Print("Is pizza face slow: " + slowPizzaFace);
+		spawnPizzaFace = (bool)config.GetValue("PizzaFace", "spawn");
+		customCMD = (bool)config.GetValue("Settings", "usecustom");
+		command = (string)config.GetValue("Settings", "customcommand");
+		customCommand.Text = command;
+		musicButton.ButtonPressed = music;
+		crashButton.ButtonPressed = crash;
+		shutdownButton.ButtonPressed = shutdown;
+		lap3SpawnButton.ButtonPressed = lap3Spawn;
+		spawnPizzaFaceButton.ButtonPressed = spawnPizzaFace;
+		useCustomCMDButton.ButtonPressed = customCMD;
+		customCommand.Text = command;
+
+		GD.Print("Crash value: " + crash);
+		if (showWelcome == true)
+		{
+			welcomeWindow.Visible = showWelcome;
+		}
+		if (music == false)
+		{
+			var sfx_index = AudioServer.GetBusIndex("Music");
+			AudioServer.SetBusVolumeDb(sfx_index, -80);
+		}
+		if (customCMD == false)
+		{
+			setCMDButton.Disabled = true;
+		}
+		if (spawnPizzaFace == false)
+		{
+			crashButton.Disabled = true;
+			crashOptionsButton.Disabled = true;
+			slowPizzaFaceButton.Disabled = true;
+		}
+		else
+		{
+			slowPizzaFaceButton.Disabled = false;
+			if (isWindows == true)
+			{
+				crashButton.Disabled = false;
+				crashOptionsButton.Disabled = false;
+			}
+		}
 	}
 
 	public void _on_john_pressed()
@@ -179,8 +239,8 @@ public partial class MainMenu : Button
 		config.SetValue("Settings", "music", music);
 		config.SetValue("Settings", "crash", crash);
 		config.SetValue("Settings", "shutdown", shutdown);
-		config.SetValue("Settings", "useCustom", customCMD);
-		config.SetValue("Settings", "customCommand", "");
+		config.SetValue("Settings", "usecustom", customCMD);
+		config.SetValue("Settings", "customcommand", command);
 		config.SetValue("PizzaFace", "lap3spawn", lap3Spawn);
 		config.SetValue("PizzaFace", "slowpizzaface", slowPizzaFace);
 		config.SetValue("PizzaFace", "spawn", spawnPizzaFace);
@@ -196,12 +256,16 @@ public partial class MainMenu : Button
 		timer.pizzaTime = true;
 		timer.ItsPizzaTime();
 		DisplayServer.WindowSetSize(new Vector2I(450, 140));
+		DisplayServer.WindowSetFlag(DisplayServer.WindowFlags.Borderless, true);
 		//Default 450, 300
 		Vector2I winPos = GetWindow().Position;
-		DisplayServer.WindowSetPosition(new Vector2I(winPos.X, winPos.Y + 160));
+		var displaySizeX = DisplayServer.ScreenGetSize().X;
+		var displaySizeY = DisplayServer.ScreenGetSize().Y;
+		DisplayServer.WindowSetPosition(new Vector2I(displaySizeX / 2 - 200, displaySizeY - 150));
 		PizzaTime scene = (PizzaTime)pizzaTime.Instantiate();
 		GetTree().Root.GetChild(0).AddChild(scene);
-		scene.Position = new Vector2I(DisplayServer.WindowGetPosition().X + 100, DisplayServer.WindowGetPosition().Y + 500);
+		scene.Position = new Vector2I(displaySizeX / 2 - 100, displaySizeY + 100);
+		GD.Print("Timer: " + maxTime);
 	}
 
 	public void _on_settings_pressed()
@@ -298,14 +362,14 @@ public partial class MainMenu : Button
 		if (toggled == false)
 		{
 			spawnPizzaFace = false;
-			lap3SpawnButton.Disabled = true;
+			slowPizzaFaceButton.Disabled = true;
 			crashButton.Disabled = true;
 			crashOptionsButton.Disabled = true;
 		}
 		else
 		{
 			spawnPizzaFace = true;
-			lap3SpawnButton.Disabled = false;
+			slowPizzaFaceButton.Disabled = false;
 			if (isWindows == true)
 			{
 				crashButton.Disabled = false;
@@ -313,6 +377,32 @@ public partial class MainMenu : Button
 			}
 		}
 	}
+
+	public void _on_use_custom_cmd_toggled(bool toggled)
+	{
+		if (toggled == false)
+		{
+			customCMD = false;
+			setCMDButton.Disabled = true;
+		}
+		else
+		{
+			customCMD = true;
+			setCMDButton.Disabled = false;
+		}
+	}
+
+	public void _on_set_custom_cmd_pressed()
+	{
+		commandWindow.Visible = true;
+	}
+
+	public void _on_ok_pressed()
+	{
+		command = customCommand.Text;
+		commandWindow.Visible = false;
+	}
+
 	public void _on_report_bugs_pressed()
 	{
 		OS.ShellOpen("https://github.com/ManuEcheveste/PizzaTimer/issues");

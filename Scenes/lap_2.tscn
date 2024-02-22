@@ -1,14 +1,21 @@
-[gd_scene load_steps=2 format=3 uid="uid://cf40qs8rordbj"]
+[gd_scene load_steps=4 format=3 uid="uid://cf40qs8rordbj"]
 
 [ext_resource type="Texture2D" uid="uid://bb6n66grghskw" path="res://Pizza Timer/Laps/Spr_lap2_0.png" id="1_ae2nn"]
+[ext_resource type="Script" path="res://Scripts/LapsLogic.cs" id="1_cdncs"]
+[ext_resource type="Texture2D" uid="uid://hy7pappi7ere" path="res://Pizza Timer/Laps/spr_lapflag_0.png" id="3_t3pej"]
 
-[node name="Lap 2" type="Window"]
+[node name="Lap 2" type="Window" node_paths=PackedStringArray("spr")]
+transparent_bg = true
 title = "Lap 2!"
 size = Vector2i(250, 160)
 unresizable = true
 borderless = true
 always_on_top = true
 transparent = true
+script = ExtResource("1_cdncs")
+lap2SPR = ExtResource("1_ae2nn")
+lap3SPR = ExtResource("3_t3pej")
+spr = NodePath("Sprite2D")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(120, 80)

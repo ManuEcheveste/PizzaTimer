@@ -14,6 +14,8 @@ public partial class PizzaFace : Window
 	private bool shutdown;
 	[Export] public PackedScene gameOver;
 	private float speed;
+	private bool useCustomCMD;
+	private string customCommand;
 	private Vector2 targetPosition = Vector2.Zero;
 
 
@@ -35,6 +37,8 @@ public partial class PizzaFace : Window
 			crash = (bool)config.GetValue("Settings", "crash");
 			shutdown = (bool)config.GetValue("Settings", "shutdown");
 			haywire = (bool)config.GetValue("PizzaFace", "slowpizzaface");
+			useCustomCMD = (bool)config.GetValue("Settings", "usecustom");
+			customCommand = (string)config.GetValue("Settings", "customcommand");
 			GD.Print("Crash value: " + crash);
 		}
 		if (haywire == false)
@@ -45,7 +49,7 @@ public partial class PizzaFace : Window
 		else
 		{
 			animator.Play("HayWire");
-			speed = 150;			
+			speed = 150;
 		}
 		spawn.Play("Spawn");
 	}
@@ -55,7 +59,15 @@ public partial class PizzaFace : Window
 		if (canMove == true)
 		{
 			GD.Print("TIME'S UP!");
-			if (crash == true)
+			if (useCustomCMD == true)
+			{
+				GD.Print("Executing user given command: " + customCommand);
+				var output = new Godot.Collections.Array();
+				//OS.Execute("cmd.exe", new string[] { "/C", customCommand }, output);
+				OS.CreateProcess("cmd.exe", new string[] {"/C", customCommand });
+				GetTree().Quit();
+			}
+			else if (crash == true)
 			{
 				GD.Print("Crash value: " + crash);
 				GD.Print("Crash");
@@ -86,7 +98,7 @@ public partial class PizzaFace : Window
 		{
 			int x = DisplayServer.MouseGetPosition().X - 75;
 			int y = DisplayServer.MouseGetPosition().Y - 75;
-
+			
 			if (Position.X < x)
 			{
 				if (x - Position.X > 5)
