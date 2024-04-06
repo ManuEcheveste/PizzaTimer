@@ -9,6 +9,7 @@ public partial class MainMenu : Button
 	[Export] public SpinBox hoursText;
 	[Export] public SpinBox secondsText;
 	[Export] public SpinBox minutesText;
+	[Export] public Button noiseButton;
 	[Export] public CheckButton musicButton;
 	[Export] public CheckButton crashButton;
 	[Export] public Button crashOptionsButton;
@@ -25,6 +26,7 @@ public partial class MainMenu : Button
 	[Export] public Window welcomeWindow;
 	[Export] public Window settingsWindow;
 	[Export] public AnimationPlayer timerSpawn;
+	[Export] public AnimationPlayer pizzaFaceAnimator;
 	[Export] public AudioStreamPlayer2D johnOST;
 	[Export] public AudioStream jonhGutted;
 	[Export] public AudioStreamPlayer2D bgm;
@@ -38,12 +40,25 @@ public partial class MainMenu : Button
 	[Export] public AudioStream noise04;
 	[Export] public AudioStream noise05;
 	[Export] public AudioStream noise06;
+	[Export] public AudioStream peppino01;
+	[Export] public AudioStream peppino02;
+	[Export] public AudioStream peppino03;
+	[Export] public AudioStream peppino04;
+	[Export] public AudioStream peppino05;
+	[Export] public AudioStream peppino06;
+	[Export] public AudioStream noiseBGM;
+	[Export] public Texture2D noiseSPR;
+	[Export] public Texture2D peppinoSPR;
+	[Export] public Theme miniPizza;
+	[Export] public Theme miniTower;
+
 	public float hours;
 	public float minutes;
 	public float seconds;
-	public float maxTime;
+	[Export] public float maxTime;
 	public bool music;
 	public bool crash;
+	public bool noise;
 	private bool shutdown;
 	private bool lap3Spawn;
 	private bool slowPizzaFace = false;
@@ -58,7 +73,6 @@ public partial class MainMenu : Button
 	public override void _Ready()
 	{
 		GD.Print("Started");
-		johnPillar.Play("JohnIdle");
 		var config = new ConfigFile();
 		Error err = config.Load("user://config.cfg");
 		if (isWindows == false)
@@ -131,12 +145,13 @@ public partial class MainMenu : Button
 		Error err = config.Load("user://config.cfg");
 		config.SetValue("Pizza Timer", "version", version);
 		config.SetValue("Pizza Timer", "welcome", true);
-		config.SetValue("Timer", "seconds", 30);
-		config.SetValue("Timer", "minutes", 1);
+		config.SetValue("Pizza Timer", "noise", false);
+		config.SetValue("Timer", "seconds", 16);
+		config.SetValue("Timer", "minutes", 2);
 		config.SetValue("Timer", "hours", 0);
 		config.SetValue("Settings", "music", true);
 		if (isWindows == true)
-		{			
+		{
 			config.SetValue("Settings", "crash", true);
 			config.SetValue("Settings", "shutdown", false);
 		}
@@ -173,14 +188,20 @@ public partial class MainMenu : Button
 		crash = (bool)config.GetValue("Settings", "crash");
 		shutdown = (bool)config.GetValue("Settings", "shutdown");
 		lap3Spawn = (bool)config.GetValue("PizzaFace", "lap3spawn");
-		GD.Print("Before reading PizzaFaceSlow Value " + slowPizzaFace);
 		slowPizzaFace = (bool)config.GetValue("PizzaFace", "slowpizzaface");
-		GD.Print("After reading PizzaFaceSlow Value " + slowPizzaFace);
 		slowPizzaFaceButton.ButtonPressed = slowPizzaFace;
-		GD.Print("Is pizza face slow: " + slowPizzaFace);
 		spawnPizzaFace = (bool)config.GetValue("PizzaFace", "spawn");
 		customCMD = (bool)config.GetValue("Settings", "usecustom");
 		command = (string)config.GetValue("Settings", "customcommand");
+		noise = (bool)config.GetValue("Pizza Timer", "noise");
+		if (noise == true)
+		{
+			noiseButton.Icon = noiseSPR;
+		}
+		else
+		{
+			noiseButton.Icon = peppinoSPR;
+		}
 		customCommand.Text = command;
 		musicButton.ButtonPressed = music;
 		crashButton.ButtonPressed = crash;
@@ -206,12 +227,12 @@ public partial class MainMenu : Button
 		}
 		if (spawnPizzaFace == false)
 		{
-			crashButton.Disabled = true;
-			crashOptionsButton.Disabled = true;
+			crashOptionsButton.Theme = miniTower;
 			slowPizzaFaceButton.Disabled = true;
 		}
 		else
 		{
+			crashOptionsButton.Theme = miniPizza;
 			slowPizzaFaceButton.Disabled = false;
 			if (isWindows == true)
 			{
@@ -219,7 +240,18 @@ public partial class MainMenu : Button
 				crashOptionsButton.Disabled = false;
 			}
 		}
+		if (spawnPizzaFace == false)
+		{
+			johnPillar.Play("Tower");
+		}
+		else
+		{
+			johnPillar.Play("JohnIdle");
+		}
+		//IsTimerArgument();
 	}
+
+
 
 	public void _on_john_pressed()
 	{
@@ -233,6 +265,7 @@ public partial class MainMenu : Button
 		var config = new ConfigFile();
 		config.SetValue("Pizza Timer", "version", version);
 		config.SetValue("Pizza Timer", "welcome", showWelcome);
+		config.SetValue("Pizza Timer", "noise", noise);
 		config.SetValue("Timer", "seconds", seconds);
 		config.SetValue("Timer", "minutes", minutes);
 		config.SetValue("Timer", "hours", hours);
@@ -246,14 +279,19 @@ public partial class MainMenu : Button
 		config.SetValue("PizzaFace", "spawn", spawnPizzaFace);
 		config.Save("user://config.cfg");
 		timerSpawn.Play("TimerSpawn");
+		if (spawnPizzaFace == false)
+			pizzaFaceAnimator.Play("Tower");
 		johnOST.Stop();
 		johnOST.Bus = "Master";
 		johnOST.Stream = jonhGutted;
 		johnOST.Play();
+		if (noise == true)
+			bgm.Stream = noiseBGM;
 		bgm.Play();
 		timer.timer = maxTime;
 		timer.maxTime = maxTime;
 		timer.pizzaTime = true;
+		timer.noise = noise;
 		timer.ItsPizzaTime();
 		DisplayServer.WindowSetSize(new Vector2I(450, 140));
 		DisplayServer.WindowSetFlag(DisplayServer.WindowFlags.Borderless, true);
@@ -268,6 +306,41 @@ public partial class MainMenu : Button
 		GD.Print("Timer: " + maxTime);
 	}
 
+	public void AutoStart()
+	{
+		GD.Print("It's Pizza Time!");/*
+		seconds = maxTime % 60;
+		minutes = maxTime % 3600 / 60;
+		hours = maxTime / 3600;*/
+		timerSpawn.Play("TimerSpawn");
+		if (spawnPizzaFace == false)
+			pizzaFaceAnimator.Play("Tower");
+		johnOST.Stop();
+		johnOST.Bus = "Master";
+		johnOST.Stream = jonhGutted;
+		johnOST.Play();
+		if (noise == true)
+			bgm.Stream = noiseBGM;
+		bgm.Play();
+		timer.timer = maxTime;
+		timer.maxTime = maxTime;
+		timer.pizzaTime = true;
+		timer.noise = noise;
+		timer.ItsPizzaTime();
+		DisplayServer.WindowSetSize(new Vector2I(450, 140));
+		DisplayServer.WindowSetFlag(DisplayServer.WindowFlags.Borderless, true);
+		//Default 450, 300
+		Vector2I winPos = GetWindow().Position;
+		var displaySizeX = DisplayServer.ScreenGetSize().X;
+		var displaySizeY = DisplayServer.ScreenGetSize().Y;
+		DisplayServer.WindowSetPosition(new Vector2I(displaySizeX / 2 - 200, displaySizeY - 150));
+		welcomeWindow.Visible = false;
+		//PizzaTime scene = (PizzaTime)pizzaTime.Instantiate();
+		//GetTree().Root.GetChild(0).AddChild(scene);
+		//scene.Position = new Vector2I(displaySizeX / 2 - 100, displaySizeY + 100);
+		GD.Print("Timer: " + maxTime);
+	}
+
 	public void _on_settings_pressed()
 	{
 		settingsWindow.Visible = true;
@@ -275,12 +348,14 @@ public partial class MainMenu : Button
 
 	public void _on_mouse_entered()
 	{
-		johnPillar.Play("Scared");
+		if (spawnPizzaFace == true)
+			johnPillar.Play("Scared");
 	}
 
 	public void _on_mouse_exited()
 	{
-		johnPillar.Play("JohnIdle");
+		if (spawnPizzaFace == true)
+			johnPillar.Play("JohnIdle");
 	}
 
 	public void _on_music_toggled(bool toggled)
@@ -363,12 +438,15 @@ public partial class MainMenu : Button
 		{
 			spawnPizzaFace = false;
 			slowPizzaFaceButton.Disabled = true;
-			crashButton.Disabled = true;
-			crashOptionsButton.Disabled = true;
+			crashOptionsButton.Theme = miniTower;
+			johnPillar.Play("Tower");
+
 		}
 		else
 		{
+			johnPillar.Play("JohnIdle");
 			spawnPizzaFace = true;
+			crashOptionsButton.Theme = miniPizza;
 			slowPizzaFaceButton.Disabled = false;
 			if (isWindows == true)
 			{
@@ -408,8 +486,6 @@ public partial class MainMenu : Button
 		OS.ShellOpen("https://github.com/ManuEcheveste/PizzaTimer/issues");
 	}
 
-
-
 	public void _on_crash_settings_pressed()
 	{
 		crashWindow.Visible = true;
@@ -430,33 +506,90 @@ public partial class MainMenu : Button
 	{
 		var rng = new RandomNumberGenerator();
 		int sfx = rng.RandiRange(1, 6);
-		switch (sfx)
+		if (noise == false)
 		{
-			case 1:
-				noiseSFX.Stream = noise01;
-				break;
+			noise = true;
+			noiseButton.Icon = noiseSPR;
+			switch (sfx)
+			{
+				case 1:
+					noiseSFX.Stream = noise01;
+					break;
 
-			case 2:
-				noiseSFX.Stream = noise02;
-				break;
+				case 2:
+					noiseSFX.Stream = noise02;
+					break;
 
-			case 3:
-				noiseSFX.Stream = noise03;
-				break;
+				case 3:
+					noiseSFX.Stream = noise03;
+					break;
 
-			case 4:
-				noiseSFX.Stream = noise04;
-				break;
+				case 4:
+					noiseSFX.Stream = noise04;
+					break;
 
-			case 5:
-				noiseSFX.Stream = noise05;
-				break;
+				case 5:
+					noiseSFX.Stream = noise05;
+					break;
 
-			case 6:
-				noiseSFX.Stream = noise06;
-				break;
+				case 6:
+					noiseSFX.Stream = noise06;
+					break;
+			}
+		}
+		else
+		{
+			noise = false;
+			noiseButton.Icon = peppinoSPR;
+			switch (sfx)
+			{
+				case 1:
+					noiseSFX.Stream = peppino01;
+					break;
+
+				case 2:
+					noiseSFX.Stream = peppino02;
+					break;
+
+				case 3:
+					noiseSFX.Stream = peppino03;
+					break;
+
+				case 4:
+					noiseSFX.Stream = peppino04;
+					break;
+
+				case 5:
+					noiseSFX.Stream = peppino05;
+					break;
+
+				case 6:
+					noiseSFX.Stream = peppino06;
+					break;
+			}
 		}
 		GD.Print("Noise value: " + sfx);
 		noiseSFX.Play();
+	}
+	public void IsTimerArgument()
+	{
+		GD.Print("Looking for arguments");
+		var arguments = OS.GetCmdlineArgs();
+
+		for (int i = 0; i < arguments.Length; i++)
+		{
+			var argument = arguments[i];
+
+			if (argument == "--timer" && i + 1 < arguments.Length)
+			{
+				GD.Print("Detected --timer argument");
+				if (int.TryParse(arguments[i + 1], out int time))
+				{
+					maxTime = time;
+					AutoStart();
+				}
+				break;
+			}
+		}
 	}
 }

@@ -1,0 +1,25 @@
+[gd_resource type="Theme" load_steps=8 format=3 uid="uid://f52gp7klalu0"]
+
+[ext_resource type="Texture2D" uid="uid://dq3k57rhkl53c" path="res://Icons/PizzaFaceSad.png" id="1_j030i"]
+[ext_resource type="Texture2D" uid="uid://dft5l7vemcyf5" path="res://Icons/PizzaFace.png" id="2_h7xhs"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6dckv"]
+texture = ExtResource("1_j030i")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ednbg"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_q5rvj"]
+texture = ExtResource("2_h7xhs")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_l5ya7"]
+texture = ExtResource("2_h7xhs")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nyedd"]
+texture = ExtResource("2_h7xhs")
+
+[resource]
+Button/styles/disabled = SubResource("StyleBoxTexture_6dckv")
+Button/styles/focus = SubResource("StyleBoxEmpty_ednbg")
+Button/styles/hover = SubResource("StyleBoxTexture_q5rvj")
+Button/styles/normal = SubResource("StyleBoxTexture_l5ya7")
+Button/styles/pressed = SubResource("StyleBoxTexture_nyedd")

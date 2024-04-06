@@ -1,0 +1,24 @@
+[gd_resource type="Theme" load_steps=7 format=3 uid="uid://dmtb5braiuvah"]
+
+[ext_resource type="Texture2D" uid="uid://ddv7itjwfpa4x" path="res://Pizza Timer/Pizza Face/mini tower.png" id="1_3or1r"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fmdqs"]
+texture = ExtResource("1_3or1r")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_k6i2w"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nh33f"]
+texture = ExtResource("1_3or1r")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jxi7t"]
+texture = ExtResource("1_3or1r")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_oikks"]
+texture = ExtResource("1_3or1r")
+
+[resource]
+Button/styles/disabled = SubResource("StyleBoxTexture_fmdqs")
+Button/styles/focus = SubResource("StyleBoxEmpty_k6i2w")
+Button/styles/hover = SubResource("StyleBoxTexture_nh33f")
+Button/styles/normal = SubResource("StyleBoxTexture_jxi7t")
+Button/styles/pressed = SubResource("StyleBoxTexture_oikks")

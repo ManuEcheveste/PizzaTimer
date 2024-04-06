@@ -17,7 +17,6 @@ config/features=PackedStringArray("4.1", "C#", "Mobile")
 boot_splash/image="res://Misc/banner.png"
 config/icon="res://Pizza Timer/Pizza Face/Sleeping/pizzaface01.png"
 config/windows_native_icon="res://Misc/icon.ico"
-boot_splash/minimum_display_time=888
 config/size/viewport_width=400
 
 [display]

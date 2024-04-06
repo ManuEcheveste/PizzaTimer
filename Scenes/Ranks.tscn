@@ -1,10 +1,11 @@
-[gd_scene load_steps=96 format=3 uid="uid://onsrulp2hhnk"]
+[gd_scene load_steps=185 format=3 uid="uid://onsrulp2hhnk"]
 
 [ext_resource type="Script" path="res://Scripts/Ranks.cs" id="1_2e0ia"]
 [ext_resource type="AudioStream" uid="uid://ca06xg6nkigav" path="res://BGM/Ranks/S.mp3" id="2_wy53a"]
 [ext_resource type="AudioStream" uid="uid://cun0515o2xkdt" path="res://SFX/sfx_killenemy.ogg" id="3_vhphe"]
 [ext_resource type="Texture2D" uid="uid://cre2g1iuwsasr" path="res://Ranks/Intro/Intro01.png" id="3_w820m"]
 [ext_resource type="Texture2D" uid="uid://b17rco8e0jg3q" path="res://Ranks/Intro/Intro02.png" id="4_g2byw"]
+[ext_resource type="Texture2D" uid="uid://co7ue5cx8uovf" path="res://Ranks/Noise/Intro/IntroN01.png" id="4_ixlri"]
 [ext_resource type="Texture2D" uid="uid://ynsvubhuidjy" path="res://Ranks/Intro/Intro03.png" id="5_2s2km"]
 [ext_resource type="Texture2D" uid="uid://dbrf7o8ulrq8k" path="res://Ranks/Intro/Intro04.png" id="6_jd2ov"]
 [ext_resource type="Texture2D" uid="uid://c2mmtg685tosb" path="res://Ranks/Intro/Intro05.png" id="7_oe7go"]
@@ -84,6 +85,87 @@
 [ext_resource type="Texture2D" uid="uid://dsy5d4lt5cnco" path="res://Ranks/Lapped/spr_rankLAPPED_7.png" id="80_ca5xf"]
 [ext_resource type="Texture2D" uid="uid://cioqevv550psf" path="res://Ranks/Lapped/spr_rankLAPPED_8.png" id="81_l3kf7"]
 [ext_resource type="Texture2D" uid="uid://mfl5v6p1j5j5" path="res://Ranks/Lapped/spr_rankLAPPED_9.png" id="82_d4jml"]
+[ext_resource type="Texture2D" uid="uid://oqnx73j8jty1" path="res://Ranks/Noise/Intro/IntroN02.png" id="84_ncmym"]
+[ext_resource type="Texture2D" uid="uid://cg10fr8k5l7et" path="res://Ranks/Noise/Intro/IntroN03.png" id="85_e6lk6"]
+[ext_resource type="Texture2D" uid="uid://c6fvse0pes8hi" path="res://Ranks/Noise/Intro/IntroN04.png" id="86_wd3aa"]
+[ext_resource type="Texture2D" uid="uid://cq4sk7af31jka" path="res://Ranks/Noise/Intro/IntroN05.png" id="87_ipfof"]
+[ext_resource type="Texture2D" uid="uid://cu0kwf14p35on" path="res://Ranks/Noise/Intro/IntroN06.png" id="88_q7h7x"]
+[ext_resource type="Texture2D" uid="uid://b07k78jr54r46" path="res://Ranks/Noise/Intro/IntroN07.png" id="89_bpiea"]
+[ext_resource type="Texture2D" uid="uid://byauxnmlpn24k" path="res://Ranks/Noise/Intro/IntroN08.png" id="90_8v7xm"]
+[ext_resource type="Texture2D" uid="uid://gbj6t4ahexnb" path="res://Ranks/Noise/Intro/IntroN09.png" id="91_ot4pl"]
+[ext_resource type="Texture2D" uid="uid://bly7wycpk4xqx" path="res://Ranks/Noise/Intro/IntroN10.png" id="92_pl6rt"]
+[ext_resource type="Texture2D" uid="uid://kncjoyab1iyg" path="res://Ranks/Noise/Intro/IntroN11.png" id="93_udskq"]
+[ext_resource type="Texture2D" uid="uid://bd86bp4i5p28l" path="res://Ranks/Noise/Intro/IntroN12.png" id="94_l3s70"]
+[ext_resource type="Texture2D" uid="uid://iaa66vpseeh7" path="res://Ranks/Noise/A/AN01.png" id="95_tcf0y"]
+[ext_resource type="Texture2D" uid="uid://dpgwx528xf1b4" path="res://Ranks/Noise/A/AN02.png" id="96_xfqmj"]
+[ext_resource type="Texture2D" uid="uid://bmdvpsw6owdyj" path="res://Ranks/Noise/A/AN03.png" id="97_qorcw"]
+[ext_resource type="Texture2D" uid="uid://b5ar4cmhlpihr" path="res://Ranks/Noise/B/BN01.png" id="98_6ljny"]
+[ext_resource type="Texture2D" uid="uid://bqbgun6gyw8kd" path="res://Ranks/Noise/B/BN02.png" id="99_dtrx6"]
+[ext_resource type="Texture2D" uid="uid://v8cml1f0yyjx" path="res://Ranks/Noise/B/BN03.png" id="100_dxnjc"]
+[ext_resource type="Texture2D" uid="uid://dwubge7fdm6hm" path="res://Ranks/Noise/C/CN01.png" id="101_osjf7"]
+[ext_resource type="Texture2D" uid="uid://brpxgstan4mcf" path="res://Ranks/Noise/C/CN02.png" id="102_pl42p"]
+[ext_resource type="Texture2D" uid="uid://b7165vurv3ni" path="res://Ranks/Noise/C/CN03.png" id="103_ucjck"]
+[ext_resource type="Texture2D" uid="uid://un7eb22v6e0j" path="res://Ranks/Noise/D/DN01.png" id="104_ipy4i"]
+[ext_resource type="Texture2D" uid="uid://cl1g38vbh5nop" path="res://Ranks/Noise/D/DN02.png" id="105_s2nq5"]
+[ext_resource type="Texture2D" uid="uid://j5sufryq2ydx" path="res://Ranks/Noise/D/DN03.png" id="106_lvh5g"]
+[ext_resource type="Texture2D" uid="uid://5pqjij8y0s34" path="res://Ranks/Noise/S/SN01.png" id="107_k6ttb"]
+[ext_resource type="Texture2D" uid="uid://d4cawkr011rud" path="res://Ranks/Noise/S/SN02.png" id="108_2a61x"]
+[ext_resource type="Texture2D" uid="uid://dw3s25mxuassh" path="res://Ranks/Noise/S/SN03.png" id="109_70tgi"]
+[ext_resource type="Texture2D" uid="uid://gp47jbd83hfp" path="res://Ranks/Noise/ALT/ALT01.png" id="110_njpwo"]
+[ext_resource type="Texture2D" uid="uid://b84j2cvjkdiqi" path="res://Ranks/Noise/ALT/ALT02.png" id="111_ihjqm"]
+[ext_resource type="Texture2D" uid="uid://c658l444yhqya" path="res://Ranks/Noise/ALT/ALT03.png" id="112_e0l7f"]
+[ext_resource type="Texture2D" uid="uid://cg55c8ynqg4mq" path="res://Ranks/Noise/P/PN01.png" id="113_ebpsa"]
+[ext_resource type="Texture2D" uid="uid://wpyihwo1f1yt" path="res://Ranks/Noise/P/PN02.png" id="114_hh83c"]
+[ext_resource type="Texture2D" uid="uid://cyo6b2sm2efn7" path="res://Ranks/Noise/P/PN03.png" id="115_37d3i"]
+[ext_resource type="Texture2D" uid="uid://cbe07hq877bfh" path="res://Ranks/Noise/P/PN04.png" id="116_xt316"]
+[ext_resource type="Texture2D" uid="uid://dyrsbhki3f61x" path="res://Ranks/Noise/P/PN05.png" id="117_gjlpk"]
+[ext_resource type="Texture2D" uid="uid://ce04ctcijlvpm" path="res://Ranks/Noise/P/PN06.png" id="118_oyy37"]
+[ext_resource type="Texture2D" uid="uid://dcbq5q51glhjx" path="res://Ranks/Noise/P/PN07.png" id="119_h3jw5"]
+[ext_resource type="Texture2D" uid="uid://byadkp1vud5g7" path="res://Ranks/Noise/P/PN08.png" id="120_n2eqy"]
+[ext_resource type="Texture2D" uid="uid://cd8lmnei3cfh" path="res://Ranks/Noise/P/PN09.png" id="121_c4s76"]
+[ext_resource type="Texture2D" uid="uid://chv42gjnuofea" path="res://Ranks/Noise/P/PN10.png" id="122_emm4i"]
+[ext_resource type="Texture2D" uid="uid://dqjhyn40hg1vs" path="res://Ranks/Noise/P/PN11.png" id="123_2v84q"]
+[ext_resource type="Texture2D" uid="uid://dw3prdn2olx2c" path="res://Ranks/Noise/P/PN12.png" id="124_4trv2"]
+[ext_resource type="Texture2D" uid="uid://cjnm3m6iomhcm" path="res://Ranks/Noise/P/PN13.png" id="125_iljf1"]
+[ext_resource type="Texture2D" uid="uid://y70138a2bml" path="res://Ranks/Noise/P/PN14.png" id="126_drulu"]
+[ext_resource type="Texture2D" uid="uid://c6b1u7hmeorcj" path="res://Ranks/Noise/P/PN15.png" id="127_rh8l3"]
+[ext_resource type="Texture2D" uid="uid://c1r7enlfn3wep" path="res://Ranks/Noise/P/PN16.png" id="128_jp8w7"]
+[ext_resource type="Texture2D" uid="uid://qadk838yy7t8" path="res://Ranks/Noise/P/PN17.png" id="129_3pa6q"]
+[ext_resource type="Texture2D" uid="uid://c776au7cwptnt" path="res://Ranks/Noise/P/PN18.png" id="130_apc63"]
+[ext_resource type="Texture2D" uid="uid://bnbvs4tj7vyde" path="res://Ranks/Noise/P/PN19.png" id="131_3qlgu"]
+[ext_resource type="Texture2D" uid="uid://borm452uu3y0y" path="res://Ranks/Noise/P/PN20.png" id="132_4gwcn"]
+[ext_resource type="Texture2D" uid="uid://mtuqxldyc4r" path="res://Ranks/Noise/P/PN21.png" id="133_vu84o"]
+[ext_resource type="Texture2D" uid="uid://djvxblrisjewe" path="res://Ranks/Noise/P/PN22.png" id="134_8xm7b"]
+[ext_resource type="Texture2D" uid="uid://car211tk11uv6" path="res://Ranks/Noise/P/PN23.png" id="135_o0ios"]
+[ext_resource type="Texture2D" uid="uid://b5couy0et0rab" path="res://Ranks/Noise/P/PN24.png" id="136_7ucru"]
+[ext_resource type="Texture2D" uid="uid://chjww3ajtfijb" path="res://Ranks/Noise/P/PN25.png" id="137_3h1lq"]
+[ext_resource type="Texture2D" uid="uid://bapr7jdbdavyj" path="res://Ranks/Noise/P/PN26.png" id="138_fhwcs"]
+[ext_resource type="Texture2D" uid="uid://bqdlxkp8kr6ne" path="res://Ranks/Noise/P/PN27.png" id="139_kowvw"]
+[ext_resource type="Texture2D" uid="uid://dl1hxlk2k67pm" path="res://Ranks/Noise/P/PN28.png" id="140_bew4w"]
+[ext_resource type="Texture2D" uid="uid://bwjmw7w7ejdi6" path="res://Ranks/Noise/P/PN29.png" id="141_xsjwr"]
+[ext_resource type="Texture2D" uid="uid://byhbnqieyfc8s" path="res://Ranks/Noise/P/PN30.png" id="142_ksocb"]
+[ext_resource type="Texture2D" uid="uid://dut0fkyertekj" path="res://Ranks/Noise/P/PN31.png" id="143_xlon8"]
+[ext_resource type="Texture2D" uid="uid://nukxll5ekucb" path="res://Ranks/Noise/P/PN32.png" id="144_66vjk"]
+[ext_resource type="Texture2D" uid="uid://yh743f538am7" path="res://Ranks/Noise/P/PN34.png" id="145_k2m8d"]
+[ext_resource type="Texture2D" uid="uid://c237axo0mrs8e" path="res://Ranks/Noise/P/PN33.png" id="146_13h1d"]
+[ext_resource type="Texture2D" uid="uid://d0r4v1sqq6t2h" path="res://Ranks/Noise/P/PN35.png" id="147_t831h"]
+[ext_resource type="Texture2D" uid="uid://3m4ptnab6xjg" path="res://Ranks/Noise/P/PN36.png" id="148_x3oju"]
+[ext_resource type="Texture2D" uid="uid://1y0v5tmkg1el" path="res://Ranks/Noise/P/PN37.png" id="149_53ofw"]
+[ext_resource type="Texture2D" uid="uid://bbqpreuoyxceb" path="res://Ranks/Noise/P/Outro/OutroN01.png" id="150_bwy3x"]
+[ext_resource type="Texture2D" uid="uid://b3o7edv1hrpu6" path="res://Ranks/Noise/P/Outro/OutroN02.png" id="151_qhwsw"]
+[ext_resource type="Texture2D" uid="uid://cmdg0veenmu7t" path="res://Ranks/Noise/P/Outro/OutroN03.png" id="152_5g7ds"]
+[ext_resource type="Texture2D" uid="uid://b2pqlagshb0it" path="res://Ranks/Noise/P/Outro/OutroN04.png" id="153_6xth1"]
+[ext_resource type="Texture2D" uid="uid://2hfthqoq7ggq" path="res://Ranks/Noise/P/Outro/OutroN05.png" id="154_x8ldb"]
+[ext_resource type="Texture2D" uid="uid://b86pxgido884e" path="res://Ranks/Noise/P/Outro/OutroN06.png" id="155_3o4vn"]
+[ext_resource type="Texture2D" uid="uid://58urv2j4faad" path="res://Ranks/Noise/P/Outro/OutroN07.png" id="156_kltdl"]
+[ext_resource type="Texture2D" uid="uid://33hqve5qyjjg" path="res://Ranks/Noise/P/Outro/OutroN08.png" id="157_0m0pc"]
+[ext_resource type="Texture2D" uid="uid://dh4saigspsc45" path="res://Ranks/Noise/P/Outro/OutroN09.png" id="158_vdfny"]
+[ext_resource type="Texture2D" uid="uid://cq42qvdos1es7" path="res://Ranks/Noise/P/Outro/OutroN10.png" id="159_hubs2"]
+[ext_resource type="Texture2D" uid="uid://cqwjojv5g3ekr" path="res://Ranks/Noise/P/Outro/OutroN11.png" id="160_hqeda"]
+[ext_resource type="Texture2D" uid="uid://40bpecgybidk" path="res://Ranks/Noise/P/Outro/OutroN12.png" id="161_1yuq1"]
+[ext_resource type="Texture2D" uid="uid://c08jq1d1nq43w" path="res://Ranks/Noise/P/Outro/OutroN13.png" id="162_mqhrc"]
+[ext_resource type="Texture2D" uid="uid://d22gmi6qnq1pd" path="res://Ranks/Noise/P/Outro/OutroN14.png" id="163_544i3"]
+[ext_resource type="Texture2D" uid="uid://dfmfqoxgk6u84" path="res://Ranks/Noise/P/RankPNBGN.png" id="166_i3gh1"]
 
 [sub_resource type="Animation" id="Animation_hkf08"]
 resource_name = "A"
@@ -501,6 +583,403 @@ tracks/3/keys = {
 }]
 }
 
+[sub_resource type="Animation" id="Animation_5ttij"]
+resource_name = "NoiseA"
+length = 15.0
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 3.7, 3.75, 3.8, 3.85, 3.9, 3.95, 4, 4.05, 4.1, 4.15, 4.2, 4.25, 4.3, 4.35, 4.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("4_ixlri"), ExtResource("4_ixlri"), ExtResource("84_ncmym"), ExtResource("85_e6lk6"), ExtResource("86_wd3aa"), ExtResource("87_ipfof"), ExtResource("88_q7h7x"), ExtResource("89_bpiea"), ExtResource("90_8v7xm"), ExtResource("91_ot4pl"), ExtResource("92_pl6rt"), ExtResource("93_udskq"), ExtResource("94_l3s70"), ExtResource("95_tcf0y"), ExtResource("96_xfqmj"), ExtResource("97_qorcw")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../../Music:stream")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("30_bvutb")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../../Music:playing")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/3/type = "method"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../..")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(15),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"Exit"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_ciah5"]
+resource_name = "NoiseB"
+length = 15.0
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 3.7, 3.75, 3.8, 3.85, 3.9, 3.95, 4, 4.05, 4.1, 4.15, 4.2, 4.25, 4.3, 4.35, 4.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("4_ixlri"), ExtResource("4_ixlri"), ExtResource("84_ncmym"), ExtResource("85_e6lk6"), ExtResource("86_wd3aa"), ExtResource("87_ipfof"), ExtResource("88_q7h7x"), ExtResource("89_bpiea"), ExtResource("90_8v7xm"), ExtResource("91_ot4pl"), ExtResource("92_pl6rt"), ExtResource("93_udskq"), ExtResource("94_l3s70"), ExtResource("98_6ljny"), ExtResource("99_dtrx6"), ExtResource("100_dxnjc")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../../Music:stream")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("19_a0pvs")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../../Music:playing")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/3/type = "method"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../..")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(15),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"Exit"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_w6tqv"]
+resource_name = "NoiseC"
+length = 15.0
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 3.7, 3.75, 3.8, 3.85, 3.9, 3.95, 4, 4.05, 4.1, 4.15, 4.2, 4.25, 4.3, 4.35, 4.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("4_ixlri"), ExtResource("4_ixlri"), ExtResource("84_ncmym"), ExtResource("85_e6lk6"), ExtResource("86_wd3aa"), ExtResource("87_ipfof"), ExtResource("88_q7h7x"), ExtResource("89_bpiea"), ExtResource("90_8v7xm"), ExtResource("91_ot4pl"), ExtResource("92_pl6rt"), ExtResource("93_udskq"), ExtResource("94_l3s70"), ExtResource("101_osjf7"), ExtResource("102_pl42p"), ExtResource("103_ucjck")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../../Music:stream")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("19_a0pvs")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../../Music:playing")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/3/type = "method"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../..")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(15),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"Exit"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_6k2b1"]
+resource_name = "NoiseD"
+length = 15.0
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 3.7, 3.75, 3.8, 3.85, 3.9, 3.95, 4, 4.05, 4.1, 4.15, 4.2, 4.25, 4.3, 4.35, 4.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("4_ixlri"), ExtResource("4_ixlri"), ExtResource("84_ncmym"), ExtResource("85_e6lk6"), ExtResource("86_wd3aa"), ExtResource("87_ipfof"), ExtResource("88_q7h7x"), ExtResource("89_bpiea"), ExtResource("90_8v7xm"), ExtResource("91_ot4pl"), ExtResource("92_pl6rt"), ExtResource("93_udskq"), ExtResource("94_l3s70"), ExtResource("104_ipy4i"), ExtResource("105_s2nq5"), ExtResource("106_lvh5g")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../../Music:stream")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("13_kyukj")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../../Music:playing")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/3/type = "method"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../..")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(15),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"Exit"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_dkctx"]
+resource_name = "NoiseS"
+length = 15.0
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 3.7, 3.75, 3.8, 3.85, 3.9, 3.95, 4, 4.05, 4.1, 4.15, 4.2, 4.25, 4.3, 4.35, 4.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("4_ixlri"), ExtResource("4_ixlri"), ExtResource("84_ncmym"), ExtResource("85_e6lk6"), ExtResource("86_wd3aa"), ExtResource("87_ipfof"), ExtResource("88_q7h7x"), ExtResource("89_bpiea"), ExtResource("90_8v7xm"), ExtResource("91_ot4pl"), ExtResource("92_pl6rt"), ExtResource("93_udskq"), ExtResource("94_l3s70"), ExtResource("107_k6ttb"), ExtResource("108_2a61x"), ExtResource("109_70tgi")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../../Music:stream")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2_wy53a")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../../Music:playing")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/3/type = "method"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../..")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(15),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"Exit"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_q72gf"]
+resource_name = "NoiseAlt"
+length = 15.0
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 3.7, 3.75, 3.8, 3.85, 3.9, 3.95, 4, 4.05, 4.1, 4.15, 4.2, 4.25, 4.3, 4.35, 4.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("4_ixlri"), ExtResource("4_ixlri"), ExtResource("84_ncmym"), ExtResource("85_e6lk6"), ExtResource("86_wd3aa"), ExtResource("87_ipfof"), ExtResource("88_q7h7x"), ExtResource("89_bpiea"), ExtResource("90_8v7xm"), ExtResource("91_ot4pl"), ExtResource("92_pl6rt"), ExtResource("93_udskq"), ExtResource("94_l3s70"), ExtResource("110_njpwo"), ExtResource("111_ihjqm"), ExtResource("112_e0l7f")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../../Music:stream")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("30_bvutb")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../../Music:playing")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/3/type = "method"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../..")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(15),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"Exit"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_axbfu"]
+resource_name = "NoiseP"
+length = 15.0
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 3.7, 3.75, 3.8, 3.85, 3.9, 3.95, 4, 4.05, 4.1, 4.15, 4.2, 4.25, 4.3, 4.35, 4.4, 4.45, 4.5, 4.55, 4.6, 4.65, 4.7, 4.75, 4.8, 4.85, 4.9, 4.95, 5, 5.05, 5.1, 5.15, 5.2, 5.25, 5.3, 5.35, 5.4, 5.45, 5.5, 5.55, 5.6, 5.65, 5.7, 5.75, 5.8, 10, 10.05, 10.1, 10.15, 10.2, 10.25, 10.3, 10.35, 10.4, 10.45, 10.5, 10.55, 10.6, 10.65, 10.7, 10.75, 10.8, 10.85, 10.9, 10.95, 11, 11.05, 11.1, 11.15, 11.2, 11.25, 11.3, 11.35, 11.4, 11.45),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("4_ixlri"), ExtResource("4_ixlri"), ExtResource("113_ebpsa"), ExtResource("113_ebpsa"), ExtResource("114_hh83c"), ExtResource("115_37d3i"), ExtResource("116_xt316"), ExtResource("117_gjlpk"), ExtResource("118_oyy37"), ExtResource("119_h3jw5"), ExtResource("120_n2eqy"), ExtResource("121_c4s76"), ExtResource("113_ebpsa"), ExtResource("113_ebpsa"), ExtResource("122_emm4i"), ExtResource("123_2v84q"), ExtResource("124_4trv2"), ExtResource("125_iljf1"), ExtResource("126_drulu"), ExtResource("127_rh8l3"), ExtResource("128_jp8w7"), ExtResource("129_3pa6q"), ExtResource("130_apc63"), ExtResource("113_ebpsa"), ExtResource("113_ebpsa"), ExtResource("131_3qlgu"), ExtResource("132_4gwcn"), ExtResource("133_vu84o"), ExtResource("134_8xm7b"), ExtResource("135_o0ios"), ExtResource("136_7ucru"), ExtResource("137_3h1lq"), ExtResource("138_fhwcs"), ExtResource("139_kowvw"), ExtResource("140_bew4w"), ExtResource("141_xsjwr"), ExtResource("142_ksocb"), ExtResource("143_xlon8"), ExtResource("144_66vjk"), ExtResource("145_k2m8d"), ExtResource("146_13h1d"), ExtResource("147_t831h"), ExtResource("148_x3oju"), ExtResource("149_53ofw"), ExtResource("150_bwy3x"), ExtResource("151_qhwsw"), ExtResource("152_5g7ds"), ExtResource("153_6xth1"), ExtResource("152_5g7ds"), ExtResource("153_6xth1"), ExtResource("152_5g7ds"), ExtResource("153_6xth1"), ExtResource("152_5g7ds"), ExtResource("153_6xth1"), ExtResource("152_5g7ds"), ExtResource("153_6xth1"), ExtResource("152_5g7ds"), ExtResource("153_6xth1"), ExtResource("152_5g7ds"), ExtResource("153_6xth1"), ExtResource("152_5g7ds"), ExtResource("153_6xth1"), ExtResource("152_5g7ds"), ExtResource("153_6xth1"), ExtResource("154_x8ldb"), ExtResource("155_3o4vn"), ExtResource("156_kltdl"), ExtResource("157_0m0pc"), ExtResource("158_vdfny"), ExtResource("159_hubs2"), ExtResource("160_hqeda"), ExtResource("161_1yuq1"), ExtResource("162_mqhrc"), ExtResource("163_544i3")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../../Music:stream")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("72_jhj14")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../../Music:playing")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/3/type = "method"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../..")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(15),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"Exit"
+}]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("../CustomBGN:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 4.85),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_sbxbq"]
 _data = {
 "A": SubResource("Animation_hkf08"),
@@ -509,6 +988,13 @@ _data = {
 "D": SubResource("Animation_c0r12"),
 "Exit": SubResource("Animation_0hlis"),
 "Lapped": SubResource("Animation_xb318"),
+"NoiseA": SubResource("Animation_5ttij"),
+"NoiseAlt": SubResource("Animation_q72gf"),
+"NoiseB": SubResource("Animation_ciah5"),
+"NoiseC": SubResource("Animation_w6tqv"),
+"NoiseD": SubResource("Animation_6k2b1"),
+"NoiseP": SubResource("Animation_axbfu"),
+"NoiseS": SubResource("Animation_dkctx"),
 "P": SubResource("Animation_1x4yl"),
 "S": SubResource("Animation_jseuw")
 }
@@ -582,7 +1068,7 @@ pizzaOwned = NodePath("Ranks/PizzaFace/PizzaFace")
 window = NodePath("Ranks")
 
 [node name="Music" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("30_bvutb")
+stream = ExtResource("72_jhj14")
 bus = &"Music"
 
 [node name="SFX" type="AudioStreamPlayer2D" parent="."]
@@ -603,7 +1089,7 @@ transparent = true
 
 [node name="Ranks" type="Sprite2D" parent="Ranks"]
 position = Vector2(480, 270)
-texture = ExtResource("3_w820m")
+texture = ExtResource("163_544i3")
 
 [node name="Animator" type="AnimationPlayer" parent="Ranks/Ranks"]
 libraries = {
@@ -619,3 +1105,9 @@ root_node = NodePath("../..")
 libraries = {
 "": SubResource("AnimationLibrary_jpeib")
 }
+
+[node name="CustomBGN" type="Sprite2D" parent="Ranks"]
+visible = false
+z_index = -1
+position = Vector2(480, 270)
+texture = ExtResource("166_i3gh1")

@@ -72,4 +72,49 @@ public partial class Ranks : Control
 				break;
 		}
 	}
+
+	public void SetRanksNoise(int ranks) //-1 = No Rank, 0 = D, 1 = C, 2 = B, 3 = A, 4 = S, 5 = P, 6 = Lapped, 10 = Alt
+	{
+		var text = window.Title;
+		var play = animator.Play;
+		switch (ranks)
+		{
+			case -1:
+				play("Exit");
+				text = " ";
+				break;
+			case 0:
+				play("NoiseD");
+				text = "D I E";
+				break;
+			case 1:
+				play("NoiseC");
+				text = "CRAP";
+				break;
+			case 2:
+				play("NoiseB");
+				text = "Eh... BAD Do better!!!!!";
+				break;
+			case 3:
+				play("NoiseA");
+				text = "I'd prefer an S or a P... Acceptable";
+				break;
+			case 4:
+				play("NoiseS");
+				text = "PERFECT";
+				break;
+			case 5:
+				play("NoiseP");
+				text = " ";
+				break;
+			case 6:
+				play("Lapped");
+				text = "Lapped";
+				break;
+			case 10:
+				play("NoiseAlt");
+				text = "Not an S";
+				break;
+		}
+	}
 }
