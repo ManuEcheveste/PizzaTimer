@@ -90,7 +90,7 @@ public partial class PizzaFace : Window
 		}
 	}
 
-
+	Vector2 accumulatedMovement = Vector2.Zero; 
 	public override void _Process(double delta)
 	{
 		float deltaTime = (float)delta;
@@ -98,60 +98,13 @@ public partial class PizzaFace : Window
 		{
 			int x = DisplayServer.MouseGetPosition().X - 75;
 			int y = DisplayServer.MouseGetPosition().Y - 75;
-			
-			if (Position.X < x)
-			{
-				if (x - Position.X > 5)
-				{
-					var pizzaX = Position.X + speed * deltaTime;
-					Position = new Vector2I((int)pizzaX, Position.Y);
-				}
-				else
-				{
-					var pizzaX = Position.X + 1;
-					Position = new Vector2I(pizzaX, Position.Y);
-				}
-			}
-			else if (Position.X > x)
-			{
-				if (Position.X - x > 5)
-				{
-					var pizzaX = Position.X - speed * deltaTime;
-					Position = new Vector2I((int)pizzaX, Position.Y);
-				}
-				else
-				{
-					var pizzaX = Position.X - 1;
-					Position = new Vector2I(pizzaX, Position.Y);
-				}
-			}
 
-			if (Position.Y < y)
-			{
-				if (y - Position.Y > 5)
-				{
-					var pizzaY = Position.Y + speed * deltaTime;
-					Position = new Vector2I(Position.X, (int)pizzaY);
-				}
-				else
-				{
-					var pizzaY = Position.Y + 1;
-					Position = new Vector2I(Position.X, pizzaY);
-				}
-			}
-			else if (Position.Y > y)
-			{
-				if (Position.Y - y > 5)
-				{
-					var pizzaY = Position.Y - speed * deltaTime;
-					Position = new Vector2I(Position.X, (int)pizzaY);
-				}
-				else
-				{
-					var pizzaY = Position.Y - 1;
-					Position = new Vector2I(Position.X, pizzaY);
-				}
-			}
+			Vector2 targetPos = new Vector2(x, y);
+			Vector2 moveDirection = (targetPos - new Vector2(Position.X, Position.Y)).Normalized();
+			accumulatedMovement += moveDirection * (speed * deltaTime); 
+
+			Position += new Vector2I((int)accumulatedMovement.X, (int)accumulatedMovement.Y);
+			accumulatedMovement -= new Vector2((int)accumulatedMovement.X, (int)accumulatedMovement.Y);
 		}
 	}
 }
