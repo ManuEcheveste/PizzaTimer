@@ -498,6 +498,10 @@ public partial class MainMenu : Button
 	{
 		settingsWindow.Visible = false;
 	}
+	public void _on_controls_pressed()
+	{
+		welcomeWindow.Visible = true;
+	}
 	public void _on_welcome_window_close_requested()
 	{
 		welcomeWindow.Visible = false;

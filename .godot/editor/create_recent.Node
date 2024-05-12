@@ -1,10 +1,10 @@
+Button
 Sprite2D
 Control
 Timer
 Window
 AudioStreamPlayer2D
 Node2D
-Button
 TextEdit
 RichTextLabel
 AnimationPlayer

@@ -41,7 +41,7 @@ public partial class BGM : AudioStreamPlayer2D
 		}
 		else
 		{
-			bgm.Stream = lap3;
+			bgm.Stream = lap3N;
 			bgm.Play();
 			lap = 3;
 		}

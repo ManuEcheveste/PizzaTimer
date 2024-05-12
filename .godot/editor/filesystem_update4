@@ -1,4 +1,21 @@
-res://Scenes/MainMenu.tscn
+res://Scenes/Timer Scene.tscn
 res://Scenes/ProgressBar.gdshader
 res://Pizza Timer/PizzaFace.tres
 res://Pizza Timer/Tower.tres
+res://Scenes/MainMenu.tscn
+res://Scenes/PizzaFace.tscn
+res://Scenes/Ranks.tscn
+res://Scenes/Death.tscn
+res://Scenes/lap_2.tscn
+res://Scenes/pizza_time!.tscn
+res://Scenes/John.tscn
+res://Scripts/BGM.cs
+res://Scripts/DeadJohn.cs
+res://Scripts/LapsLogic.cs
+res://Scripts/MainMenu.cs
+res://Scripts/PizzaFace.cs
+res://Scripts/PizzaTime.cs
+res://Scripts/Ranks.cs
+res://Scripts/Timer.cs
+res://Scripts/TimerScript.cs
+res://Scripts/WindowDrag.cs

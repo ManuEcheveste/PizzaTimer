@@ -473,116 +473,6 @@ tracks/3/keys = {
 }]
 }
 
-[sub_resource type="Animation" id="Animation_1x4yl"]
-resource_name = "P"
-length = 15.0
-step = 0.05
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 3.7, 3.75, 3.8, 3.85, 3.9, 3.95, 4, 4.05, 4.1, 4.15, 4.2, 4.25, 4.3, 4.35, 4.4, 4.45, 4.5, 4.55, 4.6, 4.65, 4.7, 4.75, 4.8, 4.85, 4.9, 4.95, 5, 5.05, 5.1, 5.15, 5.2, 5.25, 5.3, 5.35, 5.4, 5.45, 5.5),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
-"update": 1,
-"values": [ExtResource("3_w820m"), ExtResource("3_w820m"), ExtResource("36_1mwft"), ExtResource("37_r1iiw"), ExtResource("38_u5na7"), ExtResource("39_8xja7"), ExtResource("40_hj7rn"), ExtResource("41_ql186"), ExtResource("42_6ijvf"), ExtResource("43_cmigm"), ExtResource("44_2rv7x"), ExtResource("45_eovdr"), ExtResource("46_gn8p6"), ExtResource("47_04ies"), ExtResource("48_tqvc1"), ExtResource("49_kob7n"), ExtResource("50_tbnpa"), ExtResource("51_2wqct"), ExtResource("52_86x01"), ExtResource("53_np8v4"), ExtResource("54_fx72t"), ExtResource("55_tfp6g"), ExtResource("56_othcf"), ExtResource("57_4n3kp"), ExtResource("58_prhfs"), ExtResource("59_ocsc1"), ExtResource("60_k3uc4"), ExtResource("61_fmwem"), ExtResource("62_nko0j"), ExtResource("63_8d865"), ExtResource("64_cns06"), ExtResource("65_wrwyg"), ExtResource("66_yhxn8"), ExtResource("67_5e8q6"), ExtResource("68_kt2k5"), ExtResource("69_22ji2"), ExtResource("70_3f8cr"), ExtResource("71_v0vr0")]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("../../Music:stream")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [ExtResource("72_jhj14")]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("../../Music:playing")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-tracks/3/type = "method"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("../..")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(15),
-"transitions": PackedFloat32Array(1),
-"values": [{
-"args": [],
-"method": &"Exit"
-}]
-}
-
-[sub_resource type="Animation" id="Animation_jseuw"]
-resource_name = "S"
-length = 15.0
-step = 0.05
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 3.7, 3.75, 3.8, 3.85, 3.9, 3.95, 4, 4.05, 4.1, 4.15),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
-"update": 1,
-"values": [ExtResource("3_w820m"), ExtResource("3_w820m"), ExtResource("4_g2byw"), ExtResource("5_2s2km"), ExtResource("6_jd2ov"), ExtResource("7_oe7go"), ExtResource("31_plvnn"), ExtResource("32_omkqb"), ExtResource("33_x0ag8"), ExtResource("34_1nta4"), ExtResource("35_dmvhg")]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("../../Music:stream")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [ExtResource("2_wy53a")]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("../../Music:playing")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-tracks/3/type = "method"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("../..")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(15),
-"transitions": PackedFloat32Array(1),
-"values": [{
-"args": [],
-"method": &"Exit"
-}]
-}
-
 [sub_resource type="Animation" id="Animation_5ttij"]
 resource_name = "NoiseA"
 length = 15.0
@@ -598,6 +488,61 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
 "values": [ExtResource("4_ixlri"), ExtResource("4_ixlri"), ExtResource("84_ncmym"), ExtResource("85_e6lk6"), ExtResource("86_wd3aa"), ExtResource("87_ipfof"), ExtResource("88_q7h7x"), ExtResource("89_bpiea"), ExtResource("90_8v7xm"), ExtResource("91_ot4pl"), ExtResource("92_pl6rt"), ExtResource("93_udskq"), ExtResource("94_l3s70"), ExtResource("95_tcf0y"), ExtResource("96_xfqmj"), ExtResource("97_qorcw")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../../Music:stream")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("30_bvutb")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../../Music:playing")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/3/type = "method"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../..")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(15),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"Exit"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_q72gf"]
+resource_name = "NoiseAlt"
+length = 15.0
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 3.7, 3.75, 3.8, 3.85, 3.9, 3.95, 4, 4.05, 4.1, 4.15, 4.2, 4.25, 4.3, 4.35, 4.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("4_ixlri"), ExtResource("4_ixlri"), ExtResource("84_ncmym"), ExtResource("85_e6lk6"), ExtResource("86_wd3aa"), ExtResource("87_ipfof"), ExtResource("88_q7h7x"), ExtResource("89_bpiea"), ExtResource("90_8v7xm"), ExtResource("91_ot4pl"), ExtResource("92_pl6rt"), ExtResource("93_udskq"), ExtResource("94_l3s70"), ExtResource("110_njpwo"), ExtResource("111_ihjqm"), ExtResource("112_e0l7f")]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -803,116 +748,6 @@ tracks/3/keys = {
 }]
 }
 
-[sub_resource type="Animation" id="Animation_dkctx"]
-resource_name = "NoiseS"
-length = 15.0
-step = 0.05
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 3.7, 3.75, 3.8, 3.85, 3.9, 3.95, 4, 4.05, 4.1, 4.15, 4.2, 4.25, 4.3, 4.35, 4.4),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
-"update": 1,
-"values": [ExtResource("4_ixlri"), ExtResource("4_ixlri"), ExtResource("84_ncmym"), ExtResource("85_e6lk6"), ExtResource("86_wd3aa"), ExtResource("87_ipfof"), ExtResource("88_q7h7x"), ExtResource("89_bpiea"), ExtResource("90_8v7xm"), ExtResource("91_ot4pl"), ExtResource("92_pl6rt"), ExtResource("93_udskq"), ExtResource("94_l3s70"), ExtResource("107_k6ttb"), ExtResource("108_2a61x"), ExtResource("109_70tgi")]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("../../Music:stream")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [ExtResource("2_wy53a")]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("../../Music:playing")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-tracks/3/type = "method"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("../..")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(15),
-"transitions": PackedFloat32Array(1),
-"values": [{
-"args": [],
-"method": &"Exit"
-}]
-}
-
-[sub_resource type="Animation" id="Animation_q72gf"]
-resource_name = "NoiseAlt"
-length = 15.0
-step = 0.05
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 3.7, 3.75, 3.8, 3.85, 3.9, 3.95, 4, 4.05, 4.1, 4.15, 4.2, 4.25, 4.3, 4.35, 4.4),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
-"update": 1,
-"values": [ExtResource("4_ixlri"), ExtResource("4_ixlri"), ExtResource("84_ncmym"), ExtResource("85_e6lk6"), ExtResource("86_wd3aa"), ExtResource("87_ipfof"), ExtResource("88_q7h7x"), ExtResource("89_bpiea"), ExtResource("90_8v7xm"), ExtResource("91_ot4pl"), ExtResource("92_pl6rt"), ExtResource("93_udskq"), ExtResource("94_l3s70"), ExtResource("110_njpwo"), ExtResource("111_ihjqm"), ExtResource("112_e0l7f")]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("../../Music:stream")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [ExtResource("30_bvutb")]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("../../Music:playing")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-tracks/3/type = "method"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("../..")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(15),
-"transitions": PackedFloat32Array(1),
-"values": [{
-"args": [],
-"method": &"Exit"
-}]
-}
-
 [sub_resource type="Animation" id="Animation_axbfu"]
 resource_name = "NoiseP"
 length = 15.0
@@ -978,6 +813,171 @@ tracks/4/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [false, true]
+}
+
+[sub_resource type="Animation" id="Animation_dkctx"]
+resource_name = "NoiseS"
+length = 15.0
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 3.7, 3.75, 3.8, 3.85, 3.9, 3.95, 4, 4.05, 4.1, 4.15, 4.2, 4.25, 4.3, 4.35, 4.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("4_ixlri"), ExtResource("4_ixlri"), ExtResource("84_ncmym"), ExtResource("85_e6lk6"), ExtResource("86_wd3aa"), ExtResource("87_ipfof"), ExtResource("88_q7h7x"), ExtResource("89_bpiea"), ExtResource("90_8v7xm"), ExtResource("91_ot4pl"), ExtResource("92_pl6rt"), ExtResource("93_udskq"), ExtResource("94_l3s70"), ExtResource("107_k6ttb"), ExtResource("108_2a61x"), ExtResource("109_70tgi")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../../Music:stream")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2_wy53a")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../../Music:playing")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/3/type = "method"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../..")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(15),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"Exit"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_1x4yl"]
+resource_name = "P"
+length = 15.0
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 3.7, 3.75, 3.8, 3.85, 3.9, 3.95, 4, 4.05, 4.1, 4.15, 4.2, 4.25, 4.3, 4.35, 4.4, 4.45, 4.5, 4.55, 4.6, 4.65, 4.7, 4.75, 4.8, 4.85, 4.9, 4.95, 5, 5.05, 5.1, 5.15, 5.2, 5.25, 5.3, 5.35, 5.4, 5.45, 5.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("3_w820m"), ExtResource("3_w820m"), ExtResource("36_1mwft"), ExtResource("37_r1iiw"), ExtResource("38_u5na7"), ExtResource("39_8xja7"), ExtResource("40_hj7rn"), ExtResource("41_ql186"), ExtResource("42_6ijvf"), ExtResource("43_cmigm"), ExtResource("44_2rv7x"), ExtResource("45_eovdr"), ExtResource("46_gn8p6"), ExtResource("47_04ies"), ExtResource("48_tqvc1"), ExtResource("49_kob7n"), ExtResource("50_tbnpa"), ExtResource("51_2wqct"), ExtResource("52_86x01"), ExtResource("53_np8v4"), ExtResource("54_fx72t"), ExtResource("55_tfp6g"), ExtResource("56_othcf"), ExtResource("57_4n3kp"), ExtResource("58_prhfs"), ExtResource("59_ocsc1"), ExtResource("60_k3uc4"), ExtResource("61_fmwem"), ExtResource("62_nko0j"), ExtResource("63_8d865"), ExtResource("64_cns06"), ExtResource("65_wrwyg"), ExtResource("66_yhxn8"), ExtResource("67_5e8q6"), ExtResource("68_kt2k5"), ExtResource("69_22ji2"), ExtResource("70_3f8cr"), ExtResource("71_v0vr0")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../../Music:stream")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("72_jhj14")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../../Music:playing")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/3/type = "method"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../..")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(15),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"Exit"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_jseuw"]
+resource_name = "S"
+length = 15.0
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 3.7, 3.75, 3.8, 3.85, 3.9, 3.95, 4, 4.05, 4.1, 4.15),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("3_w820m"), ExtResource("3_w820m"), ExtResource("4_g2byw"), ExtResource("5_2s2km"), ExtResource("6_jd2ov"), ExtResource("7_oe7go"), ExtResource("31_plvnn"), ExtResource("32_omkqb"), ExtResource("33_x0ag8"), ExtResource("34_1nta4"), ExtResource("35_dmvhg")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../../Music:stream")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2_wy53a")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../../Music:playing")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/3/type = "method"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../..")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(15),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"Exit"
+}]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_sbxbq"]

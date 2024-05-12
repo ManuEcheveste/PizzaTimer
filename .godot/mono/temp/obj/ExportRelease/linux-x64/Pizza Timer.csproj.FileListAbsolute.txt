@@ -1,7 +1,6 @@
 C:\Users\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\linux-x64\Pizza Timer.deps.json
 C:\Users\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\linux-x64\Pizza Timer.runtimeconfig.json
 C:\Users\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\linux-x64\Pizza Timer.dll
-C:\Users\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\linux-x64\Pizza Timer.pdb
 C:\Users\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\linux-x64\GodotSharp.dll
 C:\Users\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\linux-x64\Microsoft.CSharp.dll
 C:\Users\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\linux-x64\Microsoft.VisualBasic.Core.dll
@@ -187,10 +186,8 @@ C:\Users\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\obj\ExportRe
 C:\Users\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\obj\ExportRelease\linux-x64\Pizza Timer.AssemblyInfoInputs.cache
 C:\Users\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\obj\ExportRelease\linux-x64\Pizza Timer.AssemblyInfo.cs
 C:\Users\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\obj\ExportRelease\linux-x64\Pizza Timer.csproj.CoreCompileInputs.cache
-C:\Users\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\obj\ExportRelease\linux-x64\Pizza Timer.sourcelink.json
 C:\Users\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\obj\ExportRelease\linux-x64\Pizza Timer.csproj.CopyComplete
 C:\Users\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\obj\ExportRelease\linux-x64\Pizza Timer.dll
 C:\Users\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\obj\ExportRelease\linux-x64\refint\Pizza Timer.dll
-C:\Users\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\obj\ExportRelease\linux-x64\Pizza Timer.pdb
 C:\Users\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\obj\ExportRelease\linux-x64\Pizza Timer.genruntimeconfig.cache
 C:\Users\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\obj\ExportRelease\linux-x64\ref\Pizza Timer.dll
