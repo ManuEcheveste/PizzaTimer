@@ -6,6 +6,7 @@ using System.Linq.Expressions;
 public partial class MainMenu : Button
 {
 	[Export] public bool isWindows;
+	[Export] public bool macCompatibility;
 	[Export] public SpinBox hoursText;
 	[Export] public SpinBox secondsText;
 	[Export] public SpinBox minutesText;
@@ -69,7 +70,6 @@ public partial class MainMenu : Button
 	[Export] public float version;
 	private float reportedVersion;
 
-	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
 		GD.Print("Started");
@@ -299,7 +299,8 @@ public partial class MainMenu : Button
 		Vector2I winPos = GetWindow().Position;
 		var displaySizeX = DisplayServer.ScreenGetSize().X;
 		var displaySizeY = DisplayServer.ScreenGetSize().Y;
-		DisplayServer.WindowSetPosition(new Vector2I(displaySizeX / 2 - 200, displaySizeY - 150));
+		if(macCompatibility == false)
+			DisplayServer.WindowSetPosition(new Vector2I(displaySizeX / 2 - 200, displaySizeY - 150));
 		PizzaTime scene = (PizzaTime)pizzaTime.Instantiate();
 		GetTree().Root.GetChild(0).AddChild(scene);
 		scene.Position = new Vector2I(displaySizeX / 2 - 100, displaySizeY + 100);

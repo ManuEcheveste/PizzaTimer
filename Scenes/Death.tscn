@@ -87,6 +87,7 @@ stream = ExtResource("1_w8033")
 bus = &"Music"
 
 [node name="Window" type="Window" parent="."]
+transparent_bg = true
 title = "Your Fat Cursor Slows You Down"
 initial_position = 4
 size = Vector2i(960, 540)
