@@ -191,3 +191,199 @@ C:\Users\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\obj\ExportRe
 C:\Users\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\obj\ExportRelease\osx-x64\refint\Pizza Timer.dll
 C:\Users\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\obj\ExportRelease\osx-x64\Pizza Timer.genruntimeconfig.cache
 C:\Users\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\obj\ExportRelease\osx-x64\ref\Pizza Timer.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\Pizza Timer.deps.json
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\Pizza Timer.runtimeconfig.json
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\Pizza Timer.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\Pizza Timer.pdb
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\GodotSharp.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\Microsoft.CSharp.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\Microsoft.VisualBasic.Core.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\Microsoft.VisualBasic.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\Microsoft.Win32.Primitives.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\Microsoft.Win32.Registry.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.AppContext.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Buffers.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Collections.Concurrent.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Collections.Immutable.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Collections.NonGeneric.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Collections.Specialized.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Collections.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.ComponentModel.Annotations.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.ComponentModel.DataAnnotations.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.ComponentModel.EventBasedAsync.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.ComponentModel.Primitives.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.ComponentModel.TypeConverter.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.ComponentModel.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Configuration.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Console.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Core.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Data.Common.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Data.DataSetExtensions.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Data.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Diagnostics.Contracts.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Diagnostics.Debug.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Diagnostics.DiagnosticSource.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Diagnostics.FileVersionInfo.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Diagnostics.Process.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Diagnostics.StackTrace.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Diagnostics.TextWriterTraceListener.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Diagnostics.Tools.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Diagnostics.TraceSource.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Diagnostics.Tracing.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Drawing.Primitives.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Drawing.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Dynamic.Runtime.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Formats.Asn1.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Globalization.Calendars.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Globalization.Extensions.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Globalization.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.IO.Compression.Brotli.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.IO.Compression.FileSystem.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.IO.Compression.ZipFile.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.IO.Compression.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.IO.FileSystem.AccessControl.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.IO.FileSystem.DriveInfo.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.IO.FileSystem.Primitives.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.IO.FileSystem.Watcher.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.IO.FileSystem.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.IO.IsolatedStorage.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.IO.MemoryMappedFiles.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.IO.Pipes.AccessControl.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.IO.Pipes.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.IO.UnmanagedMemoryStream.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.IO.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Linq.Expressions.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Linq.Parallel.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Linq.Queryable.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Linq.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Memory.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Net.Http.Json.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Net.Http.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Net.HttpListener.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Net.Mail.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Net.NameResolution.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Net.NetworkInformation.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Net.Ping.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Net.Primitives.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Net.Quic.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Net.Requests.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Net.Security.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Net.ServicePoint.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Net.Sockets.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Net.WebClient.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Net.WebHeaderCollection.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Net.WebProxy.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Net.WebSockets.Client.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Net.WebSockets.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Net.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Numerics.Vectors.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Numerics.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.ObjectModel.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Private.CoreLib.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Private.DataContractSerialization.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Private.Uri.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Private.Xml.Linq.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Private.Xml.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Reflection.DispatchProxy.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Reflection.Emit.ILGeneration.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Reflection.Emit.Lightweight.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Reflection.Emit.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Reflection.Extensions.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Reflection.Metadata.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Reflection.Primitives.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Reflection.TypeExtensions.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Reflection.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Resources.Reader.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Resources.ResourceManager.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Resources.Writer.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Runtime.CompilerServices.Unsafe.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Runtime.CompilerServices.VisualC.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Runtime.Extensions.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Runtime.Handles.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Runtime.InteropServices.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Runtime.Intrinsics.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Runtime.Loader.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Runtime.Numerics.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Runtime.Serialization.Formatters.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Runtime.Serialization.Json.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Runtime.Serialization.Primitives.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Runtime.Serialization.Xml.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Runtime.Serialization.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Runtime.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Security.AccessControl.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Security.Claims.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Security.Cryptography.Algorithms.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Security.Cryptography.Cng.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Security.Cryptography.Csp.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Security.Cryptography.Encoding.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Security.Cryptography.OpenSsl.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Security.Cryptography.Primitives.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Security.Cryptography.X509Certificates.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Security.Principal.Windows.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Security.Principal.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Security.SecureString.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Security.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.ServiceModel.Web.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.ServiceProcess.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Text.Encoding.CodePages.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Text.Encoding.Extensions.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Text.Encoding.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Text.Encodings.Web.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Text.Json.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Text.RegularExpressions.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Threading.Channels.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Threading.Overlapped.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Threading.Tasks.Dataflow.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Threading.Tasks.Extensions.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Threading.Tasks.Parallel.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Threading.Tasks.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Threading.Thread.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Threading.ThreadPool.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Threading.Timer.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Threading.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Transactions.Local.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Transactions.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.ValueTuple.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Web.HttpUtility.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Web.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Windows.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Xml.Linq.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Xml.ReaderWriter.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Xml.Serialization.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Xml.XDocument.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Xml.XPath.XDocument.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Xml.XPath.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Xml.XmlDocument.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Xml.XmlSerializer.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.Xml.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\System.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\WindowsBase.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\mscorlib.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\netstandard.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\createdump
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\libSystem.Globalization.Native.dylib
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\libSystem.IO.Compression.Native.dylib
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\libSystem.Native.dylib
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\libSystem.Net.Security.Native.dylib
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\libSystem.Security.Cryptography.Native.Apple.dylib
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\libSystem.Security.Cryptography.Native.OpenSsl.dylib
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\libclrjit.dylib
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\libcoreclr.dylib
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\libdbgshim.dylib
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\libhostfxr.dylib
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\libhostpolicy.dylib
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\libmscordaccore.dylib
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\bin\ExportRelease\osx-x64\libmscordbi.dylib
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\obj\ExportRelease\osx-x64\Pizza Timer.csproj.AssemblyReference.cache
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\obj\ExportRelease\osx-x64\Pizza Timer.GeneratedMSBuildEditorConfig.editorconfig
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\obj\ExportRelease\osx-x64\Pizza Timer.AssemblyInfoInputs.cache
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\obj\ExportRelease\osx-x64\Pizza Timer.AssemblyInfo.cs
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\obj\ExportRelease\osx-x64\Pizza Timer.csproj.CoreCompileInputs.cache
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\obj\ExportRelease\osx-x64\Pizza Timer.sourcelink.json
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\obj\ExportRelease\osx-x64\Pizza Timer.csproj.CopyComplete
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\obj\ExportRelease\osx-x64\Pizza Timer.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\obj\ExportRelease\osx-x64\refint\Pizza Timer.dll
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\obj\ExportRelease\osx-x64\Pizza Timer.pdb
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\obj\ExportRelease\osx-x64\Pizza Timer.genruntimeconfig.cache
+D:\ManuEcheveste\Documents\GitHub\PizzaTimer\.godot\mono\temp\obj\ExportRelease\osx-x64\ref\Pizza Timer.dll

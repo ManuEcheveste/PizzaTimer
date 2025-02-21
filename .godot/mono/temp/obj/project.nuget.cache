@@ -1,15 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "X0+PfUFhgVbEo47hvqGGTjhGDMssyWrk1I7BQKT/apMGPW2uQIw9ZAr/yzDy+jnwqtAe/ENAV8N4Nndi50WB0g==",
+  "dgSpecHash": "kx17E9lgbqj+rZw6pWlHhllTUW8IakNrJLH+S3usil9NR/k/y8kjlTvgMgfuvtsdyBuAxCJlDdMpHU3yzakpVA==",
   "success": true,
   "projectFilePath": "D:\\ManuEcheveste\\Documents\\GitHub\\PizzaTimer\\Pizza Timer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ManuEcheveste\\.nuget\\packages\\godot.sourcegenerators\\4.3.0\\godot.sourcegenerators.4.3.0.nupkg.sha512",
     "C:\\Users\\ManuEcheveste\\.nuget\\packages\\godotsharp\\4.3.0\\godotsharp.4.3.0.nupkg.sha512",
-    "C:\\Users\\ManuEcheveste\\.nuget\\packages\\godotsharpeditor\\4.3.0\\godotsharpeditor.4.3.0.nupkg.sha512",
     "C:\\Users\\ManuEcheveste\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.25\\microsoft.netcore.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\ManuEcheveste\\.nuget\\packages\\microsoft.netcore.app.runtime.osx-arm64\\6.0.25\\microsoft.netcore.app.runtime.osx-arm64.6.0.25.nupkg.sha512",
     "C:\\Users\\ManuEcheveste\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.25\\microsoft.windowsdesktop.app.ref.6.0.25.nupkg.sha512",
-    "C:\\Users\\ManuEcheveste\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.25\\microsoft.aspnetcore.app.ref.6.0.25.nupkg.sha512"
+    "C:\\Users\\ManuEcheveste\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.25\\microsoft.aspnetcore.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\ManuEcheveste\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.osx-arm64\\6.0.25\\microsoft.aspnetcore.app.runtime.osx-arm64.6.0.25.nupkg.sha512"
   ],
   "logs": []
 }
