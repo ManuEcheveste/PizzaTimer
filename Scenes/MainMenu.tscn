@@ -1,7 +1,7 @@
 [gd_scene load_steps=62 format=4 uid="uid://nijr6jo1igys"]
 
 [ext_resource type="Texture2D" uid="uid://br588ysjfoccm" path="res://Pizza Timer/Pillar John/ohno02.png" id="1_0pi6c"]
-[ext_resource type="Script" path="res://Scripts/MainMenu.cs" id="2_01dry"]
+[ext_resource type="Script" uid="uid://dn5hmru6xgkb6" path="res://Scripts/MainMenu.cs" id="2_01dry"]
 [ext_resource type="Texture2D" uid="uid://dvvs2p37ttt3g" path="res://Pizza Timer/Pillar John/pillar01.png" id="2_b1002"]
 [ext_resource type="AudioStream" uid="uid://bxex8xvl0lve8" path="res://SFX/JOHN_PILLAR_IMPACT.ogg" id="3_u5imn"]
 [ext_resource type="PackedScene" uid="uid://icdwkwcsav5a" path="res://Scenes/pizza_time!.tscn" id="4_62y8p"]
@@ -181,9 +181,9 @@ tracks/2/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_nlp1n"]
 _data = {
-"JohnIdle": SubResource("Animation_cn72u"),
-"Scared": SubResource("Animation_aii72"),
-"Tower": SubResource("Animation_8lv2b")
+&"JohnIdle": SubResource("Animation_cn72u"),
+&"Scared": SubResource("Animation_aii72"),
+&"Tower": SubResource("Animation_8lv2b")
 }
 
 [sub_resource type="AudioStreamMP3" id="AudioStreamMP3_qnpyv"]
@@ -260,7 +260,7 @@ version = 1.3
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 root_node = NodePath("../Items/BGN")
 libraries = {
-"": SubResource("AnimationLibrary_nlp1n")
+&"": SubResource("AnimationLibrary_nlp1n")
 }
 
 [node name="Items" type="Control" parent="."]
@@ -393,7 +393,7 @@ offset_right = -59.0
 offset_bottom = 88.0
 theme_override_fonts/normal_font = ExtResource("4_c3e4n")
 theme_override_font_sizes/normal_font_size = 21
-text = "Pizza Timer v1.3.1"
+text = "Pizza Timer v1.3.1.1"
 metadata/_edit_use_anchors_ = true
 
 [node name="ControlsWindow" type="Window" parent="Items"]

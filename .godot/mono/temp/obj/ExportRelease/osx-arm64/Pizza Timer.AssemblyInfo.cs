@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Pizza Timer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("ExportRelease")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a8be8074d3c46e05164c14f27d0c893b875915f9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0f228e0549f9d2907f44c2bed977c26ff1123a23")]
 [assembly: System.Reflection.AssemblyProductAttribute("Pizza Timer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Pizza Timer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

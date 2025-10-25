@@ -1,43 +1,43 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {
-      "Godot.SourceGenerators/4.3.0": {
+    "net8.0": {
+      "Godot.SourceGenerators/4.5.1": {
         "type": "package",
         "build": {
           "build/Godot.SourceGenerators.props": {}
         }
       },
-      "GodotSharp/4.3.0": {
+      "GodotSharp/4.5.1": {
         "type": "package",
         "compile": {
-          "lib/net6.0/GodotSharp.dll": {
+          "lib/net8.0/GodotSharp.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/GodotSharp.dll": {
+          "lib/net8.0/GodotSharp.dll": {
             "related": ".xml"
           }
         }
       }
     },
-    "net6.0/osx-arm64": {
-      "Godot.SourceGenerators/4.3.0": {
+    "net8.0/osx-arm64": {
+      "Godot.SourceGenerators/4.5.1": {
         "type": "package",
         "build": {
           "build/Godot.SourceGenerators.props": {}
         }
       },
-      "GodotSharp/4.3.0": {
+      "GodotSharp/4.5.1": {
         "type": "package",
         "compile": {
-          "lib/net6.0/GodotSharp.dll": {
+          "lib/net8.0/GodotSharp.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/GodotSharp.dll": {
+          "lib/net8.0/GodotSharp.dll": {
             "related": ".xml"
           }
         }
@@ -45,69 +45,63 @@
     }
   },
   "libraries": {
-    "Godot.SourceGenerators/4.3.0": {
-      "sha512": "fLDNOAo/kpL1JtGXP6b2M48dobzb5YmKSRLXKDt+td8qegu0Ao3H25avoySVmrb52d7zpe8yvgMwba7QMhqnqQ==",
+    "Godot.SourceGenerators/4.5.1": {
+      "sha512": "HOHYJQO5A/kzf5CUobeTPOX+JawSvjkDE0v/Fyo4EMYEC2MvCTGUvpJFjqQQmHYLNsiiB7RLVilcnup+jiVfdA==",
       "type": "package",
-      "path": "godot.sourcegenerators/4.3.0",
+      "path": "godot.sourcegenerators/4.5.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "analyzers/dotnet/cs/Godot.SourceGenerators.dll",
         "build/Godot.SourceGenerators.props",
-        "godot.sourcegenerators.4.3.0.nupkg.sha512",
+        "godot.sourcegenerators.4.5.1.nupkg.sha512",
         "godot.sourcegenerators.nuspec"
       ]
     },
-    "GodotSharp/4.3.0": {
-      "sha512": "mEwRmNIG2k/yPfkFencEkNVXpHCa+uETHkIQcq0MxcsfwJQZ4HueFU5Q9CYDIdd5YrRPqjwuyxbsuD6Je8lfdQ==",
+    "GodotSharp/4.5.1": {
+      "sha512": "5CFnEHT+FByv5desNHMipz/209SCrWR9CGWFZjGHnXupl1Rw8U8q4nf65/unqZVL97Rx+3J5hskPMoDGaiZL9g==",
       "type": "package",
-      "path": "godotsharp/4.3.0",
+      "path": "godotsharp/4.5.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "godotsharp.4.3.0.nupkg.sha512",
+        "godotsharp.4.5.1.nupkg.sha512",
         "godotsharp.nuspec",
-        "lib/net6.0/GodotSharp.dll",
-        "lib/net6.0/GodotSharp.xml"
+        "lib/net8.0/GodotSharp.dll",
+        "lib/net8.0/GodotSharp.xml"
       ]
     }
   },
   "projectFileDependencyGroups": {
-    "net6.0": [
-      "Godot.SourceGenerators >= 4.3.0",
-      "GodotSharp >= 4.3.0"
+    "net8.0": [
+      "Godot.SourceGenerators >= 4.5.1",
+      "GodotSharp >= 4.5.1"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ManuEcheveste\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/Users/manuecheveste/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ManuEcheveste\\Documents\\GitHub\\PizzaTimer\\Pizza Timer.csproj",
+      "projectUniqueName": "/Users/manuecheveste/Projects/PizzaTimer/Pizza Timer.csproj",
       "projectName": "Pizza Timer",
-      "projectPath": "D:\\ManuEcheveste\\Documents\\GitHub\\PizzaTimer\\Pizza Timer.csproj",
-      "packagesPath": "C:\\Users\\ManuEcheveste\\.nuget\\packages\\",
-      "outputPath": "D:\\ManuEcheveste\\Documents\\GitHub\\PizzaTimer\\.godot\\mono\\temp\\obj\\",
+      "projectPath": "/Users/manuecheveste/Projects/PizzaTimer/Pizza Timer.csproj",
+      "packagesPath": "/Users/manuecheveste/.nuget/packages/",
+      "outputPath": "/Users/manuecheveste/Projects/PizzaTimer/.godot/mono/temp/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\ManuEcheveste\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/manuecheveste/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "net6.0"
+        "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "projectReferences": {}
         }
       },
@@ -115,19 +109,27 @@
         "warnAsError": [
           "NU1605"
         ]
-      }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
-      "net6.0": {
-        "targetAlias": "net6.0",
+      "net8.0": {
+        "targetAlias": "net8.0",
         "dependencies": {
           "Godot.SourceGenerators": {
             "target": "Package",
-            "version": "[4.3.0, )"
+            "version": "[4.5.1, )",
+            "autoReferenced": true
           },
           "GodotSharp": {
             "target": "Package",
-            "version": "[4.3.0, )"
+            "version": "[4.5.1, )",
+            "autoReferenced": true
           }
         },
         "imports": [
@@ -144,23 +146,19 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[6.0.25, 6.0.25]"
+            "version": "[8.0.11, 8.0.11]"
           },
           {
             "name": "Microsoft.AspNetCore.App.Runtime.osx-arm64",
-            "version": "[6.0.25, 6.0.25]"
+            "version": "[8.0.11, 8.0.11]"
           },
           {
             "name": "Microsoft.NETCore.App.Ref",
-            "version": "[6.0.25, 6.0.25]"
+            "version": "[8.0.11, 8.0.11]"
           },
           {
             "name": "Microsoft.NETCore.App.Runtime.osx-arm64",
-            "version": "[6.0.25, 6.0.25]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[6.0.25, 6.0.25]"
+            "version": "[8.0.11, 8.0.11]"
           }
         ],
         "frameworkReferences": {
@@ -168,7 +166,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.101/PortableRuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {

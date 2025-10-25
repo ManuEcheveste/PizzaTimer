@@ -1,16 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "kx17E9lgbqj+rZw6pWlHhllTUW8IakNrJLH+S3usil9NR/k/y8kjlTvgMgfuvtsdyBuAxCJlDdMpHU3yzakpVA==",
+  "dgSpecHash": "x/WPCUtzncs=",
   "success": true,
-  "projectFilePath": "D:\\ManuEcheveste\\Documents\\GitHub\\PizzaTimer\\Pizza Timer.csproj",
+  "projectFilePath": "/Users/manuecheveste/Projects/PizzaTimer/Pizza Timer.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\ManuEcheveste\\.nuget\\packages\\godot.sourcegenerators\\4.3.0\\godot.sourcegenerators.4.3.0.nupkg.sha512",
-    "C:\\Users\\ManuEcheveste\\.nuget\\packages\\godotsharp\\4.3.0\\godotsharp.4.3.0.nupkg.sha512",
-    "C:\\Users\\ManuEcheveste\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.25\\microsoft.netcore.app.ref.6.0.25.nupkg.sha512",
-    "C:\\Users\\ManuEcheveste\\.nuget\\packages\\microsoft.netcore.app.runtime.osx-arm64\\6.0.25\\microsoft.netcore.app.runtime.osx-arm64.6.0.25.nupkg.sha512",
-    "C:\\Users\\ManuEcheveste\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.25\\microsoft.windowsdesktop.app.ref.6.0.25.nupkg.sha512",
-    "C:\\Users\\ManuEcheveste\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.25\\microsoft.aspnetcore.app.ref.6.0.25.nupkg.sha512",
-    "C:\\Users\\ManuEcheveste\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.osx-arm64\\6.0.25\\microsoft.aspnetcore.app.runtime.osx-arm64.6.0.25.nupkg.sha512"
+    "/Users/manuecheveste/.nuget/packages/godot.sourcegenerators/4.5.1/godot.sourcegenerators.4.5.1.nupkg.sha512",
+    "/Users/manuecheveste/.nuget/packages/godotsharp/4.5.1/godotsharp.4.5.1.nupkg.sha512",
+    "/Users/manuecheveste/.nuget/packages/microsoft.netcore.app.ref/8.0.11/microsoft.netcore.app.ref.8.0.11.nupkg.sha512",
+    "/Users/manuecheveste/.nuget/packages/microsoft.netcore.app.runtime.osx-arm64/8.0.11/microsoft.netcore.app.runtime.osx-arm64.8.0.11.nupkg.sha512",
+    "/Users/manuecheveste/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.11/microsoft.aspnetcore.app.ref.8.0.11.nupkg.sha512",
+    "/Users/manuecheveste/.nuget/packages/microsoft.aspnetcore.app.runtime.osx-arm64/8.0.11/microsoft.aspnetcore.app.runtime.osx-arm64.8.0.11.nupkg.sha512"
   ],
   "logs": []
 }

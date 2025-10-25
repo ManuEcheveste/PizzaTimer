@@ -1,13 +1,13 @@
 [gd_scene load_steps=97 format=4 uid="uid://bhboso5nooesc"]
 
-[ext_resource type="Shader" path="res://Scenes/ProgressBar.gdshader" id="1_5yh7e"]
-[ext_resource type="Script" path="res://Scripts/TimerScript.cs" id="1_48brj"]
+[ext_resource type="Shader" uid="uid://cm6ojtvplhurv" path="res://Scenes/ProgressBar.gdshader" id="1_5yh7e"]
+[ext_resource type="Script" uid="uid://cwak2gtb326qs" path="res://Scripts/TimerScript.cs" id="1_48brj"]
 [ext_resource type="PackedScene" uid="uid://buulwsia4xrtj" path="res://Scenes/PizzaFace.tscn" id="2_bkvkw"]
 [ext_resource type="AudioStream" uid="uid://datnyrpgb0hre" path="res://SFX/Lap2.ogg" id="2_mw3am"]
 [ext_resource type="AudioStream" uid="uid://bwxv37u20wytg" path="res://BGM/Noise/PanicN.mp3" id="3_61mfr"]
 [ext_resource type="Texture2D" uid="uid://bx6n5u18kigvm" path="res://Pizza Timer/Time Bar/Fill.png" id="3_u6k5g"]
 [ext_resource type="PackedScene" uid="uid://onsrulp2hhnk" path="res://Scenes/Ranks.tscn" id="3_v4k4a"]
-[ext_resource type="Script" path="res://Scripts/transparency.gd" id="3_y387e"]
+[ext_resource type="Script" uid="uid://bgcraomosboab" path="res://Scripts/transparency.gd" id="3_y387e"]
 [ext_resource type="Texture2D" uid="uid://b5t7r3wp6ciam" path="res://Pizza Timer/Time Bar/bar.png" id="4_exbc0"]
 [ext_resource type="PackedScene" uid="uid://cf40qs8rordbj" path="res://Scenes/lap_2.tscn" id="4_vp5ba"]
 [ext_resource type="Texture2D" uid="uid://c1vweagvi7rf4" path="res://Pizza Timer/Time Bar/John/John01.png" id="5_8278s"]
@@ -18,7 +18,7 @@
 [ext_resource type="Texture2D" uid="uid://ndhaq38s43mw" path="res://Pizza Timer/Pizza Face/Sleeping/pizzaface03.png" id="9_gowjv"]
 [ext_resource type="Texture2D" uid="uid://dut01me1dgbmf" path="res://Pizza Timer/Numbers/1.png" id="10_l6m34"]
 [ext_resource type="Texture2D" uid="uid://cggf74qa2w5t7" path="res://Pizza Timer/Pizza Face/Sleeping/pizzaface04.png" id="10_lj6uo"]
-[ext_resource type="Script" path="res://Scripts/Timer.cs" id="10_my8vd"]
+[ext_resource type="Script" uid="uid://dlpgu6ynstxr3" path="res://Scripts/Timer.cs" id="10_my8vd"]
 [ext_resource type="Texture2D" uid="uid://bowwu7cvkqmo4" path="res://Pizza Timer/Numbers/2.png" id="11_8y4hm"]
 [ext_resource type="Texture2D" uid="uid://c7mbcs5k6mg0c" path="res://Pizza Timer/Pizza Face/Sleeping/pizzaface05.png" id="11_j1ebl"]
 [ext_resource type="Texture2D" uid="uid://bl8msop3a64hd" path="res://Pizza Timer/Pizza Face/Sleeping/pizzaface06.png" id="12_hxbsc"]
@@ -73,8 +73,8 @@
 [ext_resource type="Texture2D" uid="uid://kwg0hd0ti3iy" path="res://Pizza Timer/Time Bar/John/John21.png" id="51_bjfwo"]
 [ext_resource type="Texture2D" uid="uid://bxnxfln3ugnoa" path="res://Pizza Timer/Time Bar/John/John22.png" id="52_xjp6c"]
 [ext_resource type="PackedScene" uid="uid://nijr6jo1igys" path="res://Scenes/MainMenu.tscn" id="54_hx6r2"]
-[ext_resource type="Script" path="res://Scripts/BGM.cs" id="57_k61y3"]
-[ext_resource type="Script" path="res://Scripts/WindowDrag.cs" id="63_am6ae"]
+[ext_resource type="Script" uid="uid://sghxoutj13wv" path="res://Scripts/BGM.cs" id="57_k61y3"]
+[ext_resource type="Script" uid="uid://bty5m88nr63rg" path="res://Scripts/WindowDrag.cs" id="63_am6ae"]
 [ext_resource type="AudioStream" uid="uid://csnu2m1lhliqe" path="res://BGM/Laps/lap1.mp3" id="72_2mhoi"]
 [ext_resource type="AudioStream" uid="uid://cs8yw7k4lgtbq" path="res://BGM/Laps/lap2.mp3" id="74_o5ffc"]
 [ext_resource type="AudioStream" uid="uid://cmn8raof1y0x7" path="res://BGM/Laps/lap3.mp3" id="75_gqevv"]
@@ -83,9 +83,9 @@
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_k1dsl"]
 shader = ExtResource("1_5yh7e")
+shader_parameter/fill = ExtResource("3_u6k5g")
 shader_parameter/direction = Vector2(1, 0)
 shader_parameter/speedScale = 0.1
-shader_parameter/fill = ExtResource("3_u6k5g")
 
 [sub_resource type="Animation" id="Animation_4w6ra"]
 resource_name = "Dispawn"
@@ -277,10 +277,10 @@ tracks/3/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ilvvy"]
 _data = {
-"Dispawn": SubResource("Animation_4w6ra"),
-"PizzaFace": SubResource("Animation_dbwte"),
-"ShowTime": SubResource("Animation_cee6i"),
-"Tower": SubResource("Animation_ni445")
+&"Dispawn": SubResource("Animation_4w6ra"),
+&"PizzaFace": SubResource("Animation_dbwte"),
+&"ShowTime": SubResource("Animation_cee6i"),
+&"Tower": SubResource("Animation_ni445")
 }
 
 [sub_resource type="Animation" id="Animation_d1u6f"]
@@ -340,8 +340,8 @@ tracks/1/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_sxpsh"]
 _data = {
-"TimerDispawn": SubResource("Animation_d1u6f"),
-"TimerSpawn": SubResource("Animation_nybu5")
+&"TimerDispawn": SubResource("Animation_d1u6f"),
+&"TimerSpawn": SubResource("Animation_nybu5")
 }
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_g1ia2"]
@@ -380,7 +380,7 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_vpi30"]
 _data = {
-"John": SubResource("Animation_omj75")
+&"John": SubResource("Animation_omj75")
 }
 
 [sub_resource type="AudioStreamMP3" id="AudioStreamMP3_b6aa5"]
@@ -505,7 +505,7 @@ texture = ExtResource("7_duedu")
 
 [node name="PizzaFaceAnimator" type="AnimationPlayer" parent="Timer/Pizza Timer/Pizza Face"]
 libraries = {
-"": SubResource("AnimationLibrary_ilvvy")
+&"": SubResource("AnimationLibrary_ilvvy")
 }
 
 [node name="Pizza Laugh" type="AudioStreamPlayer2D" parent="Timer/Pizza Timer/Pizza Face"]
@@ -517,7 +517,7 @@ stream = ExtResource("34_y1fhy")
 
 [node name="TimerSpawn" type="AnimationPlayer" parent="Timer/Pizza Timer"]
 libraries = {
-"": SubResource("AnimationLibrary_sxpsh")
+&"": SubResource("AnimationLibrary_sxpsh")
 }
 
 [node name="John Face" type="HSlider" parent="Timer"]
@@ -532,7 +532,7 @@ editable = false
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Timer/John Face"]
 libraries = {
-"": SubResource("AnimationLibrary_vpi30")
+&"": SubResource("AnimationLibrary_vpi30")
 }
 
 [node name="BGM" type="AudioStreamPlayer2D" parent="Timer" node_paths=PackedStringArray("bgm", "panicbgm")]

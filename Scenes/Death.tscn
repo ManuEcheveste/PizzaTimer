@@ -1,6 +1,6 @@
 [gd_scene load_steps=13 format=3 uid="uid://buc8ax8a55r1j"]
 
-[ext_resource type="Script" path="res://Scripts/Ranks.cs" id="1_rb2jh"]
+[ext_resource type="Script" uid="uid://crsgyesijthva" path="res://Scripts/Ranks.cs" id="1_rb2jh"]
 [ext_resource type="AudioStream" uid="uid://hc2c0b00d4xu" path="res://BGM/Your Fat Cursor Slows You Down.mp3" id="1_w8033"]
 [ext_resource type="Texture2D" uid="uid://c7v1ja4u4e5ma" path="res://Pizza Timer/Times Up/FatCursor01.png" id="3_fjqdu"]
 [ext_resource type="Texture2D" uid="uid://bl8lguae557g4" path="res://Pizza Timer/Times Up/FatCursor02.png" id="4_ssd0f"]
@@ -68,7 +68,7 @@ tracks/3/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_evhe0"]
 _data = {
-"FatCursor": SubResource("Animation_425eu")
+&"FatCursor": SubResource("Animation_425eu")
 }
 
 [node name="YourFatCursorSlowsYouDown" type="Control" node_paths=PackedStringArray("animator")]
@@ -102,5 +102,5 @@ texture = ExtResource("3_fjqdu")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Window/Sprite2D"]
 libraries = {
-"": SubResource("AnimationLibrary_evhe0")
+&"": SubResource("AnimationLibrary_evhe0")
 }

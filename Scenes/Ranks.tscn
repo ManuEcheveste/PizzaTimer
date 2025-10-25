@@ -1,6 +1,6 @@
 [gd_scene load_steps=185 format=3 uid="uid://onsrulp2hhnk"]
 
-[ext_resource type="Script" path="res://Scripts/Ranks.cs" id="1_2e0ia"]
+[ext_resource type="Script" uid="uid://crsgyesijthva" path="res://Scripts/Ranks.cs" id="1_2e0ia"]
 [ext_resource type="AudioStream" uid="uid://ca06xg6nkigav" path="res://BGM/Ranks/S.mp3" id="2_wy53a"]
 [ext_resource type="AudioStream" uid="uid://cun0515o2xkdt" path="res://SFX/sfx_killenemy.ogg" id="3_vhphe"]
 [ext_resource type="Texture2D" uid="uid://cre2g1iuwsasr" path="res://Ranks/Intro/Intro01.png" id="3_w820m"]
@@ -982,21 +982,21 @@ tracks/3/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_sbxbq"]
 _data = {
-"A": SubResource("Animation_hkf08"),
-"B": SubResource("Animation_5ce64"),
-"C": SubResource("Animation_untdh"),
-"D": SubResource("Animation_c0r12"),
-"Exit": SubResource("Animation_0hlis"),
-"Lapped": SubResource("Animation_xb318"),
-"NoiseA": SubResource("Animation_5ttij"),
-"NoiseAlt": SubResource("Animation_q72gf"),
-"NoiseB": SubResource("Animation_ciah5"),
-"NoiseC": SubResource("Animation_w6tqv"),
-"NoiseD": SubResource("Animation_6k2b1"),
-"NoiseP": SubResource("Animation_axbfu"),
-"NoiseS": SubResource("Animation_dkctx"),
-"P": SubResource("Animation_1x4yl"),
-"S": SubResource("Animation_jseuw")
+&"A": SubResource("Animation_hkf08"),
+&"B": SubResource("Animation_5ce64"),
+&"C": SubResource("Animation_untdh"),
+&"D": SubResource("Animation_c0r12"),
+&"Exit": SubResource("Animation_0hlis"),
+&"Lapped": SubResource("Animation_xb318"),
+&"NoiseA": SubResource("Animation_5ttij"),
+&"NoiseAlt": SubResource("Animation_q72gf"),
+&"NoiseB": SubResource("Animation_ciah5"),
+&"NoiseC": SubResource("Animation_w6tqv"),
+&"NoiseD": SubResource("Animation_6k2b1"),
+&"NoiseP": SubResource("Animation_axbfu"),
+&"NoiseS": SubResource("Animation_dkctx"),
+&"P": SubResource("Animation_1x4yl"),
+&"S": SubResource("Animation_jseuw")
 }
 
 [sub_resource type="Animation" id="Animation_pnl2m"]
@@ -1054,7 +1054,7 @@ tracks/3/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_jpeib"]
 _data = {
-"Owned": SubResource("Animation_pnl2m")
+&"Owned": SubResource("Animation_pnl2m")
 }
 
 [node name="Ranks" type="Control" node_paths=PackedStringArray("animator", "pizzaOwned", "window")]
@@ -1093,7 +1093,7 @@ texture = ExtResource("163_544i3")
 
 [node name="Animator" type="AnimationPlayer" parent="Ranks/Ranks"]
 libraries = {
-"": SubResource("AnimationLibrary_sbxbq")
+&"": SubResource("AnimationLibrary_sbxbq")
 }
 
 [node name="PizzaFace" type="Sprite2D" parent="Ranks"]
@@ -1103,7 +1103,7 @@ texture = ExtResource("74_s5nxb")
 [node name="PizzaFace" type="AnimationPlayer" parent="Ranks/PizzaFace"]
 root_node = NodePath("../..")
 libraries = {
-"": SubResource("AnimationLibrary_jpeib")
+&"": SubResource("AnimationLibrary_jpeib")
 }
 
 [node name="CustomBGN" type="Sprite2D" parent="Ranks"]

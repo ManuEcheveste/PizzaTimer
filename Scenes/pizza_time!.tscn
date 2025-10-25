@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://icdwkwcsav5a"]
 
-[ext_resource type="Script" path="res://Scripts/PizzaTime.cs" id="1_f14fc"]
+[ext_resource type="Script" uid="uid://lv54xxsha71g" path="res://Scripts/PizzaTime.cs" id="1_f14fc"]
 [ext_resource type="Texture2D" uid="uid://bl81i0t8xxjti" path="res://Pizza Timer/Pizza Time/pizzatime02.png" id="2_pkqjq"]
 [ext_resource type="Texture2D" uid="uid://ru67kw66q00l" path="res://Pizza Timer/Pizza Time/pizzatime01.png" id="3_04lkf"]
 
@@ -23,7 +23,7 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_awn47"]
 _data = {
-"pizza": SubResource("Animation_57bde")
+&"pizza": SubResource("Animation_57bde")
 }
 
 [node name="Pizza Time!" type="Window" node_paths=PackedStringArray("animator")]
@@ -47,5 +47,5 @@ texture = ExtResource("2_pkqjq")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite2D"]
 libraries = {
-"": SubResource("AnimationLibrary_awn47")
+&"": SubResource("AnimationLibrary_awn47")
 }

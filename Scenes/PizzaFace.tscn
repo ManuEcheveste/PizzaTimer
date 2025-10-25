@@ -1,7 +1,7 @@
 [gd_scene load_steps=32 format=3 uid="uid://buulwsia4xrtj"]
 
 [ext_resource type="Texture2D" uid="uid://vli64lnlmlug" path="res://Pizza Timer/Pizza Face/Chase/spr_pizzaface_9.png" id="1_gyrte"]
-[ext_resource type="Script" path="res://Scripts/PizzaFace.cs" id="1_mt7an"]
+[ext_resource type="Script" uid="uid://qxtp23n7a8t8" path="res://Scripts/PizzaFace.cs" id="1_mt7an"]
 [ext_resource type="Texture2D" uid="uid://4dq7xf6p1bpo" path="res://Pizza Timer/Pizza Face/Chase/spr_pizzaface_0.png" id="1_xotfg"]
 [ext_resource type="PackedScene" uid="uid://buc8ax8a55r1j" path="res://Scenes/Death.tscn" id="2_6d3q8"]
 [ext_resource type="Texture2D" uid="uid://dgmrhwvjk32ef" path="res://Pizza Timer/Pizza Face/SlowShow/spr_pizzahead_haywire_0.png" id="3_3txcg"]
@@ -65,8 +65,8 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_uox5m"]
 _data = {
-"Chase": SubResource("Animation_hfxk1"),
-"HayWire": SubResource("Animation_2noeu")
+&"Chase": SubResource("Animation_hfxk1"),
+&"HayWire": SubResource("Animation_2noeu")
 }
 
 [sub_resource type="Animation" id="Animation_nh4lg"]
@@ -99,7 +99,7 @@ tracks/1/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_kt4jr"]
 _data = {
-"Spawn": SubResource("Animation_nh4lg")
+&"Spawn": SubResource("Animation_nh4lg")
 }
 
 [node name="PizzaFace" type="Window" node_paths=PackedStringArray("animator", "spawn")]
@@ -141,12 +141,12 @@ texture = ExtResource("1_gyrte")
 
 [node name="Chase" type="AnimationPlayer" parent="Pizza Face"]
 libraries = {
-"": SubResource("AnimationLibrary_uox5m")
+&"": SubResource("AnimationLibrary_uox5m")
 }
 
 [node name="PizzaAppear" type="AnimationPlayer" parent="Pizza Face"]
 libraries = {
-"": SubResource("AnimationLibrary_kt4jr")
+&"": SubResource("AnimationLibrary_kt4jr")
 }
 
 [connection signal="mouse_entered" from="Control" to="." method="_on_control_mouse_entered"]

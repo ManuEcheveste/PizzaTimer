@@ -1,35 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ManuEcheveste\\Documents\\GitHub\\PizzaTimer\\Pizza Timer.csproj": {}
+    "/Users/manuecheveste/Projects/PizzaTimer/Pizza Timer.csproj": {}
   },
   "projects": {
-    "D:\\ManuEcheveste\\Documents\\GitHub\\PizzaTimer\\Pizza Timer.csproj": {
+    "/Users/manuecheveste/Projects/PizzaTimer/Pizza Timer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ManuEcheveste\\Documents\\GitHub\\PizzaTimer\\Pizza Timer.csproj",
+        "projectUniqueName": "/Users/manuecheveste/Projects/PizzaTimer/Pizza Timer.csproj",
         "projectName": "Pizza Timer",
-        "projectPath": "D:\\ManuEcheveste\\Documents\\GitHub\\PizzaTimer\\Pizza Timer.csproj",
-        "packagesPath": "C:\\Users\\ManuEcheveste\\.nuget\\packages\\",
-        "outputPath": "D:\\ManuEcheveste\\Documents\\GitHub\\PizzaTimer\\.godot\\mono\\temp\\obj\\",
+        "projectPath": "/Users/manuecheveste/Projects/PizzaTimer/Pizza Timer.csproj",
+        "packagesPath": "/Users/manuecheveste/.nuget/packages/",
+        "outputPath": "/Users/manuecheveste/Projects/PizzaTimer/.godot/mono/temp/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ManuEcheveste\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/manuecheveste/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {}
           }
         },
@@ -37,19 +32,27 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
             "Godot.SourceGenerators": {
               "target": "Package",
-              "version": "[4.3.0, )"
+              "version": "[4.5.1, )",
+              "autoReferenced": true
             },
             "GodotSharp": {
               "target": "Package",
-              "version": "[4.3.0, )"
+              "version": "[4.5.1, )",
+              "autoReferenced": true
             }
           },
           "imports": [
@@ -66,23 +69,19 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.25, 6.0.25]"
+              "version": "[8.0.11, 8.0.11]"
             },
             {
               "name": "Microsoft.AspNetCore.App.Runtime.osx-arm64",
-              "version": "[6.0.25, 6.0.25]"
+              "version": "[8.0.11, 8.0.11]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.25, 6.0.25]"
+              "version": "[8.0.11, 8.0.11]"
             },
             {
               "name": "Microsoft.NETCore.App.Runtime.osx-arm64",
-              "version": "[6.0.25, 6.0.25]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.25, 6.0.25]"
+              "version": "[8.0.11, 8.0.11]"
             }
           ],
           "frameworkReferences": {
@@ -90,7 +89,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
