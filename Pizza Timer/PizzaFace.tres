@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=8 format=3 uid="uid://f52gp7klalu0"]
+[gd_resource type="Theme" format=3 uid="uid://f52gp7klalu0"]
 
 [ext_resource type="Texture2D" uid="uid://dq3k57rhkl53c" path="res://Icons/PizzaFaceSad.png" id="1_j030i"]
 [ext_resource type="Texture2D" uid="uid://dft5l7vemcyf5" path="res://Icons/PizzaFace.png" id="2_h7xhs"]

@@ -1,13 +1,16 @@
-[gd_scene load_steps=3 format=3 uid="uid://c8ue1fcoc4qtj"]
+[gd_scene format=3 uid="uid://c8ue1fcoc4qtj"]
 
 [ext_resource type="Texture2D" uid="uid://dfhbbetovfkri" path="res://Pizza Timer/Pillar John/dead.png" id="1_f3mbj"]
-[ext_resource type="Script" uid="uid://dudgrx8b22tkr" path="res://Scripts/DeadJohn.cs" id="1_vfo63"]
+[ext_resource type="Script" uid="uid://dcdi5bdwnysl7" path="res://Scripts/DeadJohn.cs" id="1_vfo63"]
 
-[node name="Dead John" type="Window"]
+[node name="Dead John" type="Window" unique_id=1129190556]
+oversampling_override = 1.0
 title = "John"
+position = Vector2i(0, 36)
 size = Vector2i(125, 225)
+borderless = true
 script = ExtResource("1_vfo63")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=863965954]
 texture = ExtResource("1_f3mbj")
 centered = false
